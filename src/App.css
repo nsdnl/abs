@@ -1,38 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap");
+#root {
+    font-family: 'Teko', 'helvetica';
+    min-height: 100vh;
+    overflow: auto;
+    font-size: 20px;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
+li, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  dark-theme-color: #2b2e3e
+  red-theme-color: #f72c2d
+*/
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+}
+
+.header-area {
+    background: linear-gradient(90deg, transparent, #2b2e3e);
+    color: #ffffff;
+    padding: 10px 30px 6px;
+    display: flex;
+    height: 90px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    box-shadow: -1px 4px 9px #616161;
+}
+
+.header-area.sticky {
+
+}
+
+.secondary {
+    display: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.secondary.sticky {
+    display: flex;
+    position: fixed;
+}
+
+/******************* Header CSS starts  ********************/
+.header-menus {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-menus-mobile {
+    display: none;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.header-menu-icon {
+    cursor: pointer;
+    padding: 31px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.header-menus-mobile.selected .header-menu-icon {
+    background-color: white;
+}
+
+.header-menu-icon > div {
+    background-color: orangered;
+    width: 30px;
+    height: 4px;
+    margin-top: 4px;
+}
+
+.header-menus-mobile ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.logo img {
+    width: 230px;
+}
+
+.menu-item {
+
+}
+
+.secondary.sticky img {
+    /*box-shadow: 1px 1px 13px #dcdcdc;*/
+    border-radius: 10px;
+    padding: 7px;
+    width: 155px;
+    background: white;
+}
+
+.menu-item a {
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item a:hover {
+    background-color: #333;
+}
+
+/******** Header CSS ends *************/
+
+main {
+    height: calc(100vh - 190px);
+    margin-top: 90px;
+    box-sizing: border-box;
+    padding: 50px;
+    background-image: url('./slides/pic1.jpeg');
+    background-repeat: no-repeat;
+    color: white;
+    background-size: 100% 100%;
+}
+
+.footer {
+    background-color: #2b2e3e;
+    color: white;
+}
+
+.footer-copy {
+    text-align: center;
+    border-top: 1px solid #111217;
+    padding: 16px;
+    color: #9e9e9e;
+    font-size: 0.9rem;
+}
+.footer-content {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.footer-section {
+}
+
+.footer-section label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.section-list {
+    padding: 0;
+    margin-top: 40px;
+}
+.section-list li {
+    line-height: 36px;
+    color: #9e9e9e;
+    cursor: text;
+    font-size: 0.9rem;
+}
+
+
+/********** HOME page css starts *********************/
+.home-page {
+    padding: 100px;
+    position: relative;
+}
+.home-content {}
+.home-slides-container {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    right: 5%;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.home-signature {
+    color: #f72c2d;
+    display: flex;
+    align-items: center;
+}
+.home-signature span {
+    width: 100px;
+    height: 3px;
+    background-color: #f72c2d;
+    display: block;
+    margin-right: 20px;
+}
+.home-slide {
+    width: 100%;
+    position: absolute;
+    transition: all 0.7s cubic-bezier(0.63, 0.01, 0.5, 0.96);
+}
+.home-actions {}
+/********** HOME page css ends *********************/
+
+
+@media only screen and (max-width: 1023px) {
+    .header-area {
+        padding-right: 0;
+    }
+    .header-menus {
+        display: none;
+    }
+
+    .header-menus-mobile .mobile-menu {
+        display: block;
+    }
+
+    .header-menus-mobile {
+        display: flex;
+        z-index: 1;
+    }
+    .mobile-menu {
+        overflow: hidden;
+        animation: slideOut .3s ease-in-out;
+    }
+    .header-menus-mobile .mobile-menu .menu-item {
+        transition: all 0.3s ease-in-out;
+    }
+    .header-menus-mobile.selected .mobile-menu {
+        animation: slideIn .3s ease-in-out;
+    }
+    .header-menus-mobile.selected .mobile-menu .menu-item {
+
+    }
+    .header-menus-mobile .mobile-menu .menu-item a {
+        display: block;
+        padding: 25px;
+        color: #2b2e3e;
+        border-radius: 0;
+        border-bottom: 1px solid #2b2e3e;
+    }
+    .header-menus-mobile .mobile-menu .menu-item a:hover {
+        background-color: #2b2e3e;
+        color: #ffffff;
+    }
+    .header-menus-mobile .mobile-menu .menu-item a:active {
+        background-color: #f72c2d;
+        color: white;
+    }
+
+    /**** Home page css starts **/
+    .home-slides-container {
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+    /**** Home page css ends **/
+
+}
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .header-menus-mobile {
+        position: static;
+    }
+    .header-menus-mobile ul {
+        top: 120px;
+    }
+    .footer-content {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+    .section-list {
+        margin: 5px 0 20px 0;
+    }
+
+    /**** Home page css starts **/
+    .home-page {
+        padding: 0;
+    }
+    /**** Home page css ends **/
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes slideOut {
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

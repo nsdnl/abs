@@ -1,25 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { TrainingComponent } from './pages/trainings/training.component';
+
+
+const Routes = [
+  {
+    path: '/home',
+    component: HomeComponent
+  },
+  {
+    path: '/contact-us',
+    component: ContactComponent
+  },
+  {
+    path: '/training',
+    component: TrainingComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/home',
+    component: HomeComponent
+  }
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <HeaderComponent />
+      <main>
+      <Switch>
+        {Routes.map((route: any, i: number) => {
+            return <Route key={`root-route${i}`} {...route}/>
+          }
+        )}
+      </Switch>
+      </main>
+      <FooterComponent />
+    </HashRouter>
   );
 }
 
