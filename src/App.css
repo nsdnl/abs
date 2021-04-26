@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap");
 #root {
-    font-family: 'Teko', 'helvetica';
+    font-family: 'Roboto';
+    font-size: 16px;
     min-height: 100vh;
     overflow: auto;
-    font-size: 20px;
 }
 
 .App {
@@ -36,8 +36,9 @@ li, ul {
     color: white;
 }
 
+
 h1 {
-    font-size: 50px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -47,6 +48,25 @@ h1 {
 }
 
 header {
+}
+
+main {
+    font-family: 'Teko', 'helvetica';
+    min-height: 100vh;
+    overflow: auto;
+    font-size: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    -webkit-letter-spacing: 10px;
+    -moz-letter-spacing: 10px;
+    -ms-letter-spacing: 10px;
+    letter-spacing: 10px;
 }
 
 .header-area {
@@ -60,6 +80,7 @@ header {
     left: 0;
     right: 0;
     box-shadow: -1px 4px 9px #616161;
+    z-index: 11;
 }
 
 .header-area.sticky {
@@ -75,6 +96,7 @@ header {
 .secondary.sticky {
     display: flex;
     position: fixed;
+    z-index: 11;
 }
 
 /******************* Header CSS starts  ********************/
@@ -130,19 +152,23 @@ header {
 }
 
 .menu-item {
-
+    cursor: pointer;
 }
 
 .secondary.sticky img {
-    /*box-shadow: 1px 1px 13px #dcdcdc;*/
+    box-shadow: 1px 1px 13px #dcdcdc;
     border-radius: 10px;
     padding: 7px;
     width: 155px;
     background: white;
 }
 
+.menu-item span.language:hover {
+    color: lightgreen;
+}
+
 .menu-item a {
-    padding: 30px;
+    padding: 20px 30px;
     text-decoration: none;
     color: white;
     border-radius: 10px;
@@ -156,14 +182,17 @@ header {
 /******** Header CSS ends *************/
 
 main {
-    height: calc(100vh - 190px);
-    margin-top: 90px;
+    min-height: calc(100vh - 190px);
+    margin: 90px auto 0 auto;
+    border: 1px solid #dcdcdc;
+    max-width: 1400px;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 0;
     background-image: url('./slides/pic1.jpeg');
     background-repeat: no-repeat;
     color: white;
     background-size: 100% 100%;
+    /*font-family: "senticosans",Arial,Verdana,sans-serif;*/
 }
 
 .footer {
@@ -203,18 +232,31 @@ main {
     cursor: text;
     font-size: 0.9rem;
 }
+.section-list a {
+    line-height: 36px;
+    color: #9e9e9e;
+    /*cursor: text;*/
+    font-size: 0.9rem;
+}
 
 
 /********** HOME page css starts *********************/
 .home-page {
     padding: 100px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
-.home-content {}
+.home-content {
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    align-self: flex-end;
+}
 .home-slides-container {
     width: 500px;
     height: 300px;
-    position: absolute;
+    /*position: absolute;*/
     right: 5%;
     overflow: hidden;
     text-transform: uppercase;
@@ -235,6 +277,15 @@ main {
     width: 100%;
     position: absolute;
     transition: all 0.7s cubic-bezier(0.63, 0.01, 0.5, 0.96);
+}
+.home-msg {
+    border: 4px solid #f72c2d;
+    padding: 0 10px;
+    font-size: 32px;
+    color: #2b2e3e;
+    background: #ffffff8f;
+    border-radius: 16px;
+    font-style: italic;
 }
 .home-actions {}
 /********** HOME page css ends *********************/
@@ -260,16 +311,20 @@ main {
         overflow: hidden;
         animation: slideOut .3s ease-in-out;
     }
+    .mobile-menu span.language {
+        color: #2b2e3e;
+    }
     .header-menus-mobile .mobile-menu .menu-item {
         transition: all 0.3s ease-in-out;
     }
     .header-menus-mobile.selected .mobile-menu {
         animation: slideIn .3s ease-in-out;
+        box-shadow: 6px 4px 20px #848484;
     }
     .header-menus-mobile.selected .mobile-menu .menu-item {
 
     }
-    .header-menus-mobile .mobile-menu .menu-item a {
+    .header-menus-mobile .mobile-menu .menu-item a, .mobile-menu span.language {
         display: block;
         padding: 25px;
         color: #2b2e3e;
@@ -286,22 +341,31 @@ main {
     }
 
     /**** Home page css starts **/
+    .home-page {
+        padding: 40px 0;
+    }
     .home-slides-container {
         width: 100%;
         right: 0;
         left: 0;
     }
     /**** Home page css ends **/
-
 }
 @media only screen and (max-width: 767px) {
     h1 {
         font-size: 24px;
     }
-
+    main {
+    }
+    .home-content {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
+    .home-page {
+        padding: 50px 10px;
+    }
     .header-menus-mobile {
         position: static;
     }
@@ -309,7 +373,7 @@ main {
         top: 120px;
     }
     .footer-content {
-        display: block;
+        /*display: block;*/
         padding: 20px;
         text-align: center;
     }
@@ -317,9 +381,10 @@ main {
         margin: 5px 0 20px 0;
     }
 
+
     /**** Home page css starts **/
-    .home-page {
-        padding: 0;
+    .home-slides-container {
+        height: 150px;
     }
     /**** Home page css ends **/
 }

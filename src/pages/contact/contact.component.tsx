@@ -8,7 +8,7 @@ export class ContactComponent extends PureComponent<any, any> {
 
   render(): React.ReactNode {
     return <div>
-      Contact component
+
     </div>
   }
 }
