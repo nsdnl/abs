@@ -62,7 +62,7 @@ export class FaqComponent extends Component<any, any> {
             titleDt: `FAQ`,
             items: [
                 {
-                    id: 1,
+                    id: '1',
                     label: 'How do you assess new clients?',
                     labelDt: `Hoe beoordeelt u nieuwe klanten?`,
                     faq: `An initial fitness test must be performed to gauge your overall health and
@@ -80,7 +80,7 @@ oefenprogramma te ontwerpen, zullen we uw resultaten als uitgangspunt
 gebruiken.`
                 },
                 {
-                    id: 2,
+                    id: '2',
                     label: 'How will you track my progress?',
                     labelDt: `Hoe ga je mijn voortgang volgen?`,
                     faq: `We log your progress through an app that is convenient for you and your
@@ -92,7 +92,7 @@ hebben. Als je geen gebruik wilt maken van de app, houdt je trainer je
 voortgang handmatig bij wanneer jullie samen trainen.`
                 },
                 {
-                    id: 3,
+                    id: '3',
                     label: 'Do you offer nutritional advice?',
                     labelDt: `Biedt u voedingsadviezen aan?`,
                     faq: `We will take a closer look at your diet and make suggestions on how to add or
@@ -104,7 +104,7 @@ levensstijl en fitnessdoelen in acht genomen zodat er specifieke
 voedingsadvies kan worden geboden.`
                 },
                 {
-                    id: 4,
+                    id: '4',
                     label: `How much does it cost?`,
                     labelDt: `Hoeveel kost het?`,
                     faq: `Can you put a price on improved quality of life and breaking barriers?
@@ -119,7 +119,7 @@ verschillende inkomens.
 Neem contact met ons op en we lichten het nader toe.`
                 },
                 {
-                    id: 5,
+                    id: '5',
                     label: 'What\'s your preferred style of encouragement?',
                     labelDt: `Wat is uw favoriete stijl van aanmoediging?`,
                     faq: `We use honest and positive reinforcement. We do not believe body-
@@ -128,7 +128,7 @@ shaming can be effective for motivational purposes.`,
 shaming effectief kan zijn voor motiverende doeleinden.`
                 },
                 {
-                    id: 6,
+                    id: '6',
                     label: `How do you incorporate 'fun' into workouts?`,
                     labelDt: `Hoe integreer je 'plezier' in trainingen?`,
                     faq: `Every one different so is our view of fun. Some like to be pushed to their limit
@@ -142,11 +142,16 @@ worden gegamificeerd. We zullen de training hierop aanpassen.`
         };
     }
 
+    componentDidMount(): void {
+        const elm: any = document.scrollingElement;
+        elm.scrollTop = 0;
+    }
+
     getFaq = () => {
         const {items, language} = this.state;
-        return <Accordion className={'faq-container'}>
+        return <Accordion className={'faq-container'} preExpanded={['1']} allowZeroExpanded>
             {items.map((item: any, index: number) => {
-                return <AccordionItem key={item.id}>
+                return <AccordionItem key={item.id} uuid={item.id}>
                     <AccordionItemHeading>
                         <AccordionItemButton>
                             {item[`label${language}`]}
