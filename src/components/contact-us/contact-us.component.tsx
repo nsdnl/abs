@@ -17,7 +17,7 @@ export class ContactUsComponent extends Component<any, any> {
         this.state = {
             language,
             trialBtnText: 'FREE 1 trial PT sessions',
-            trialBtnTextDt: 'Gratis 1 PT-proefsessie',
+            trialBtnTextDt: 'Gratis 1 proef sessie',
             hiddenTxt: `Upon completion of any Life Enhancer, the participant will not be billed for the
 trial session which took place at the beginning. If the participant did not complete the Life Enhancer
 program, the trial pt session is €45,- ex VAT.`,
@@ -127,7 +127,7 @@ u te bieden heeft.`,
         const {showTrialTxt, language} = this.state;
         const state = this.state;
         return <div className={'side-bar'}>
-            <div className={'side-header'}>GYM HOURS</div>
+            <div className={'side-header'}>TRAINING HOURS</div>
             <div className={'side-content'}>
                 <a href={`tel:${this.ownerPhone}`}>
                     <span>&#x0260E; :- </span>

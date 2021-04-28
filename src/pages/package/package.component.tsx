@@ -47,7 +47,7 @@ export default class PackageComponent extends Component<any, any> {
           detail: 'Lorum ipsum Lorum ipsumLorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum'
         },
         {
-          title: 'Advanced subscription',
+          title: 'Advanced abbo',
           titleDt: 'Advanced abonnement/ 24-7',
           price: '$ 65',
           id: 3,
@@ -69,13 +69,8 @@ export default class PackageComponent extends Component<any, any> {
               This test we will repeat monthly or so to keep of the improvement. Each package is specifically made for
               you with the objective to alter behaviour and change your approach towards exercise.`,
       priceTxtDt: `Wanneer je een keuze hebt gemaakt beoordelen wij jouw fitness niveau. Maak je geen zorgen je kunt niet falen voor deze test. Deze aan jou aangepaste test wordt maandelijks herhaald om vooruitgang bij te houden. Elke pakket is opmaat gemaakt met als doel het veranderen van jouw  gedrag en benadering naar oefeningen.`,
-      memberTxt: `Do you want / If you want to fit in that pair of jeans, get rid of flabby
-            arms, get lean muscles or you are happy as you are but want a lifestyle that is heather, ABS is the best
-            choice for you! We all want to live our best lives and feel great doing it but with your hectic schedule,
-            you might find t difficult to achieve your fitness goals and get fighting fit. We at ABS offer the
-            flexibility to reach your maximum potential with a variety of different online, remote, and customized
-            personal training lifestyle enhancers.`,
-      memberTxtDt: ``,
+      memberTxt: `Do you want / if you want to fit in that pair of jeans, get rid of flabby arms, get lean muscles or you are happy as you are but want a lifestyle that is healthier, ABS is the best choice for you. We all want to live our best lives and feel great doing it but with your hectic schedule, you might find it difficult to achieve your fitness goals and get fighting fit. We at ABS offer flexibility to reach your maximum potential with a variety of live, online, and a customised personal training lifestyle enhancers.`,
+      memberTxtDt: `Wil je in die spijkerbroek passen, slappe armen wegwerken, magere spieren krijgen of ben je gelukkig zoals je bent maar wil je een gezondere levensstijl, dan is ABS de beste keuze voor jou. We willen allemaal ons beste leven leiden en ons er goed bij voelen, maar met je hectische schema vind je het misschien moeilijk om je fitnessdoelen te bereiken en fit te worden. Wij bij ABS bieden flexibiliteit om uw maximale potentieel te bereiken met een verscheidenheid aan live, online en op maat gemaakte persoonlijke levensstijlverbeteraars`,
       groups: [
         {label: '1 : 1', labelDt: '1 : 1', description: `Invest in your health with a personal trainer from ABS who will offer you individual expert advice.
               The specific methods are safe and suitable for whatever your goals or fitness level. (insert funny joke)

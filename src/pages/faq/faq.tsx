@@ -59,7 +59,7 @@ export class FaqComponent extends Component<any, any> {
         this.state = {
             language,
             title: `FAQ`,
-            titleDt: `FAQ`,
+            titleDt: `Veel gestelde vragen`,
             items: [
                 {
                     id: '1',

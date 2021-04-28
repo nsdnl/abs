@@ -24,7 +24,7 @@ export class AboutUsComponent extends Component<any, any> {
             philospyTextDt: `We zijn ervan overtuigt dat fitness niet alleen gaat om afvallen en het esthetische. Wij beschouwen fitness als een hulpmiddel voor het toevoegen van jaren aan jouw leven, gezondheid aan jouw jaren en het voorkomen van ziektes. Fitness is om die reden een levensverbeteraar en moet opgenomen worden in je levensstijl in plaats van generieke programma’s.
 Geef ons jouw tijd en wij geven jou resultaten.`,
             philospyMainText: `At Advanced body system we believe in working smarter rather than harder. So if you give us your time, we give you results.`,
-            philospyMainTextDt: `Bij Advanced Body System geloven we in slimmer werken in plaats van harder. Dus als u ons uw tijd geeft, geven wij u resultaten.`,
+            philospyMainTextDt: `Bij Advanced Body System geloven wij in slimmer werken in plaats van harder. Dus als jij ons jouw tijd geeft geven wij je resultaten.`,
             ourGymLabel: 'OUR GYM',
             ourGymLabelDt: 'ONZE GYM',
             ourGymText: `The company was founded in 2007 by Khivo Boyrard.
@@ -64,12 +64,8 @@ The main aim of Advanced Body System is to focus and improve the health span of 
             missionTextDt: `Bij Advanced Body System begrijpen we dat ieder lichaam anders is en komt met eigen uitdagingen. 
 Met dit als uitgangspunt bieden wij een op maat gemaakte aanpak voor individuele behoeften. Fitness zou prettig, doel gericht maar vooral effectief moeten zijn. Iedere deelnemer moet zich vermaken tijdens het bevorderen van de vitaliteit door bewezen fitness. Wij bieden de kennis en vaardigheden aan onze cliënten voor een blijvend resultaat. Je moet het alleen willen`,
             missionTitle: 'OUR MISSION',
-            headerText: `Advanced Body System envisions working with various professionals to offer the best tailor made service to
-          achieve fitness success. The main aim of Advanced Body System is to focus and improve the health span of the
-          current and later years of our lives`,
-            headerTextDt: `Advanced Body System stelt zich voor om met verschillende professionals samen te werken om de beste service op maat te bieden
-          fitness succes behalen. Het belangrijkste doel van Advanced Body System is om de gezondheidsspanne van de
-          huidige en latere jaren van ons leven`
+            headerText: `AdvancedBodySystem envisions working with various professionals to offer the best tailor-made service to achieve fitness success. The main aim of AdvancedBodySystem is to focus on and improve the healthspan of current and later years your life.`,
+            headerTextDt: `ABS voorziet een samenwerking met verschillende professionals om de beste op maat gemaakte service te bieden voor het behalen van fitnesssucces. Het belangrijkste doel van ABS is om u te concentreren op en het verbeteren van de gezondheid van uw huidige en latere jaren`
         };
     }
 
