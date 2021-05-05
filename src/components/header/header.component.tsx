@@ -16,7 +16,7 @@ export class HeaderComponent extends PureComponent<any, any> {
                 {label: 'Features', labelDt: 'Features', id: 'features', url: '/features'},
                 // {label: 'Gallary', id: 'gallery', url: '/gallery'},
                 {label: 'Contact', labelDt: 'Contact', id: 'contact', url: '/contact-us'},
-                {label: 'Netherlands', labelDt: 'English', id: 'contact', language: true},
+                {label: 'NL', labelDt: 'EN', id: 'contact', language: true},
             ],
             stickyHeader: false,
             logoPosition: -122,
@@ -50,11 +50,18 @@ export class HeaderComponent extends PureComponent<any, any> {
         window.location.reload();
     };
 
+    getLanguageToggle = (menu: any) => {
+        const {language} = this.state;
+        let cls = language === 'Dt' ? 'ln-dt' : 'ln-en';
+        return menu.language ?
+            <span className={`language`} onClick={this.toggleLanguage}>| <span className={`${cls}`}></span> {menu[`label${language}`]}</span> : '';
+    };
+
     getMenus = () => {
         const {menus, language} = this.state;
         return menus.map((menu: any, i: number) => <div key={`menu-${i}`} className={'menu-item'}>
             {menu.url && <a href={`#${menu.url}`}>{menu[`label${language}`]}</a>}
-            {menu.language && <span className={'language'} onClick={this.toggleLanguage}>| {menu[`label${language}`]}</span>}
+            {this.getLanguageToggle(menu)}
         </div>)
     };
     getMobileMenus = () => {
@@ -62,7 +69,7 @@ export class HeaderComponent extends PureComponent<any, any> {
         const style = selectedMenu ? {height: 79} : {height: 0};
         return menus.map((menu: any, i: number) => <li style={style} key={`menu-${i}`} className={'menu-item'}>
             {menu.url && <a onClick={this.selectMenu} href={`#${menu.url}`}>{menu[`label${language}`]}</a>}
-            {menu.language && <span className={'language'} onClick={this.toggleLanguage}>{menu[`label${language}`]}</span>}
+            {this.getLanguageToggle(menu)}
         </li>)
     };
 

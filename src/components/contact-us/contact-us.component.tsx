@@ -15,6 +15,10 @@ export class ContactUsComponent extends Component<any, any> {
         super(props);
         const language = localStorage.getItem('__ln') || '';
         this.state = {
+            mainTitle: 'TRAINING HOURS',
+            mainTitleDt: 'trainingsuren',
+            dutchPhone: 'Phone',
+            dutchPhoneDt: 'Tel',
             language,
             trialBtnText: 'FREE 1 trial PT sessions',
             trialBtnTextDt: 'Gratis 1 proef sessie',
@@ -127,7 +131,7 @@ u te bieden heeft.`,
         const {showTrialTxt, language} = this.state;
         const state = this.state;
         return <div className={'side-bar'}>
-            <div className={'side-header'}>TRAINING HOURS</div>
+            <div className={'side-header'}>{state[`title${language}`]}</div>
             <div className={'side-content'}>
                 <a href={`tel:${this.ownerPhone}`}>
                     <span>&#x0260E; :- </span>
@@ -136,7 +140,7 @@ u te bieden heeft.`,
                 <div><a
                     href="mailto:khivo@advancedbodysystem.com?body='dummy body'&subject='dummy subject'">&#9993;: {this.ownerEmail}</a>
                 </div>
-                <div>Phone: 0617709888</div>
+                <div>{state[`dutchPhone${language}`]}: 0617709888</div>
             </div>
             <a className={'side-badge'} onClick={this.toggleTrialText}>
                 <label>{state[`trialBtnText${language}`]}</label>
@@ -151,7 +155,7 @@ u te bieden heeft.`,
         const {language} = this.state;
         const state = this.state;
         return <Wrapper>
-            <div className={'header'}>{state[`title${language}`]}</div>
+            <div className={'header'}>{state[`mainTitle${language}`]}</div>
             <div>{state[`subTitle${language}`]}</div>
             {this.getContactForm()}
             {this.getSideBar()}

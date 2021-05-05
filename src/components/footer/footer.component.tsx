@@ -12,7 +12,7 @@ export class FooterComponent extends PureComponent<any, any> {
                         {label: 'About Us', labelDt: 'Over ons', url: '#/about-us'},
                         {label: 'Contact', labelDt: 'Contact', url: '#/contact-us'},
                         {label: 'FAQ', labelDt: `Veel gestelde vragen`, url: '#/faq'},
-                        {label: 'Careers', labelDt: 'Carrière', url: '#/careers'},
+                        // {label: 'Careers', labelDt: 'Carrière', url: '#/careers'},
                     ]
                 },
                 {

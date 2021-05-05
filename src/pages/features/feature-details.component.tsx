@@ -12,7 +12,9 @@ export class FeatureDetailsComponent extends Component<any, any> {
       items: [
         {
           label: 'Weight/Fat management',
-          labelDt: `Gewichtsbeheersing:`,
+          labelDt: `Gewichtsmanagement`,
+          img: 'images/weight_management_02.jpg',
+          height: '1000px',
           id: 'weight-fat-management',
           subTitle: `Reduce body 1 to 5 kg of fat efficiently and safely to achieve the ideal weight.  
 If weight is an issue this Lifestyle Enhancer will let you lose the excess weight and keep it off. We will combine sustainable training with nutritional adjustments to achieve the ideal weight. ABS has helped many people burn fat without the torture of starving.
@@ -56,7 +58,8 @@ Warning: If you don’t want to look like an underwear model do not go any furth
         },
         {
           label: 'Muscle building & strength training',
-          labelDt: ``,
+          labelDt: `Spieropbouw & krachttraining`,
+          img: 'images/muscle_building_02.jpg',
           id: 'muscle-strength',
           subTitle: `Gain significant muscle mass and get sculpted! Increase not only muscle mass but also look like a chiselled god. Only for those who want to look like a super hero saving the planet. Or a super villain striking fear in your enemies.`,
           subTitleDt: `Krijg aanzienlijke spiermassa en word ripped! Vergroot niet alleen de spiermassa, maar zie er ook uit
@@ -91,7 +94,9 @@ Warning: If you don’t want to look like an underwear model do not go any furth
         },
         {
           label: 'Sport – Specific training',
-          labelDt: ``,
+          labelDt: `Sport specifiek trainen`,
+          img: 'images/sport_specif_training_01.jpg',
+          height: '765px',
           id: 'sport-specific-training',
           subTitle: `Enhance your power and stamina for a particular sport. Great for off-season training to not reduce performance when getting back on pitch, mat or in the ring. We have a training customised for you.`,
           subTitleDt: `Verbeter uw kracht en uithoudingsvermogen voor een bepaalde sport. Geweldig voor
@@ -125,7 +130,8 @@ Warning: If you don’t want to look like an underwear model do not go any furth
         },
         {
           label: 'Core conditioning',
-          labelDt: ``,
+          labelDt: `Core training`,
+          img: 'images/core_training_01.jpg',
           id: 'core-conditioning',
           subTitle: `Protect your lower back, stabilize your spine, and learn proper posture while performing specific core exercises to combat your sedentary lifestyle. Core training will be an important part of all the life enhancers given by ABS. However in this specific program core stability ,x,x.
 If sitting is the new smoking, how many hours are you sitting a day. Not mentioning the bad posture which creeps in at about 10Am. 
@@ -167,11 +173,12 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
         },
         {
           label: 'Senior fitness',
-          labelDt: ``,
+          labelDt: `Senior fitness`,
+          img: 'images/senior_training_01.jpg',
           id: 'senior-fitness',
           subTitle: `Delay the aging process and improve your well-being and quality of life by performing these workout programs. Designed for the seasoned adults of 55 years and older. The customised plan aims to keep you more  physically independent so you will be able enjoy life to the fullest. We lay  special emphasis on stretching, balance and functional movements to be able to keep doing what you love on a daily bases.`,
           subTitleDt: `Stel het verouderingsproces uit en verbeter uw welzijn en kwaliteit van leven door deze
-          trainingsprogramma&#39;s uit te voeren. Ontworpen voor doorgewinterde volwassenen van 55 jaar en
+          trainingsprogramma's uit te voeren. Ontworpen voor doorgewinterde volwassenen van 55 jaar en
           ouder. Het plan op maat is bedoeld om u lichamelijk onafhankelijker te houden, zodat u optimaal van
           het leven kunt genieten. We leggen speciale nadruk op rekken, balans en functionele bewegingen om
           dagelijks te kunnen blijven doen waar je van houdt.`,
@@ -207,7 +214,9 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
         },
         {
           label: 'Feeling alive/life booster:',
-          labelDt: ``,
+          labelDt: `Levens booster`,
+          img: 'images/LifeBooster01.jpg',
+          height: '880px',
           id: 'metabolic-conditioning',
           subTitle: `Some call it boot camp or interval training or even metabolic conditioning. ABS Feeling alive is so much more than just interval training or switching from exercise stations in a hurry. We custom design a plan with a combination the of right cardio and strength workouts. No two plans are the same. Don’t expect to spend a long time doing endless, slow cardiovascular training nor uninspiring straight-set strength training workouts. At ABS we give a new spin to interval training to keep you wanting more without the injuries due to the fact we put the focus on YOU. Let’s break boundaries not your back.`,
           subTitleDt: `Sommigen noemen het bootcamp of intervaltraining of zelfs metabolische conditionering. ABS
@@ -244,7 +253,8 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
         },
         {
           label: 'Prenatal Workout',
-          labelDt: ``,
+          labelDt: `Prenatale training`,
+          img: 'images/pernatal_training_01.jpg',
           id: 'prenatal-workout',
           subTitle: `Have a healthy pregnancy by staying physically active during pregnancy, this allows you, the mommy-to-be to remain low-risk patients, thereby allowing them a wide array of options for labor and delivery. It is a mix of cardiovascular exercises, strength and flexibility training! Once your physician declares you are not in a risk group we can start you journey.`,
           subTitleDt: `Zorg voor een gezonde zwangerschap door lichamelijk actief te blijven tijdens de
@@ -283,7 +293,7 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
             },
             {
               label: 'Recommended For',
-              style: {border: '1px solid #6b6b6b', top: 0, left: '350px'},
+              style: {border: '1px solid #6b6b6b', top: 0, left: '350px', height: '230px'},
               description: `woman who are expecting and want the best for themselves and their unborn child during all trimesters.`,
               descriptionDt: `Zwangere vrouwen in alle trimesters die het beste voor zichzelf en hun ongeboren
               kind willen.`,
@@ -293,7 +303,9 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
         },
         {
           label: 'Postnatal Workout',
-          labelDt: ``,
+          labelDt: `Postnatale training`,
+          img: 'images/postnatal_training_01.jpg',
+          height: '910px',
           id: 'postnatal-workout',
           subTitle: `Congratulations, you made it, you’re a mommy! Now comes the hard part. Getting back to your previous fitness level or beyond is a priority but you have to take it slow. Your body just went through a great deal during labour and delivery. You can start the postnatal workout six to eight weeks after delivery. This timeframe depending on the type of delivery. Our workout emphasises not only on reducing the separation of the left and right abdominal wall called diastasis recti but also customised cardio and resistance training. This is key to getting you back in shape and feeling great without straining your pelvic floor.`,
           subTitleDt: `Gefeliciteerd, je hebt het gehaald, je bent een mama! Nu komt het moeilijke gedeelte. Terugkeren
@@ -329,7 +341,9 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
         },
         {
           label: 'Daddy’s Muscle/toning Workout',
-          labelDt: ``,
+          labelDt: `Papa training`,
+          img: 'images/daddy_training_01.jpg',
+          height: '1000px',
           id: 'daddy-special',
           subTitle: `Achieving dad strength isn't an easy process but getting a dad body on the other hand is. You know, the dads who look masculine but are (slightly) overweight. The physical grind of child-rearing will leave you with an impressive array of aches and pains if you're not ready for it. So whether you’re a new father or if you're expecting a bundle of joy in the near future, do yourself a favor and get prepared!`,
           subTitleDt: `Het krijgen van papa kracht is geen eenvoudig proces, maar het krijgen van een papa lichaam wel
@@ -398,7 +412,7 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
     return <div className={'feature-wrapper'}>
       {items.map((item: any, i: number) => {
         return <div key={`item-${i}`}>
-          <div className={'feature'} id={item.id}>
+          <div className={'feature'} id={item.id} style={{backgroundImage: `url(${item.img})`, height: item.height}}>
             <div className={'feature-label'}>
               <span className={'r-lbl'}>{item[`label${language}`]}</span>
               <div className={'r-sub-title'}>{item[`subTitle${language}`]}</div>
@@ -454,14 +468,25 @@ const RenderWrapper = styled.div`
     .separator {
       width: 60%;
       border: 2px solid red;
+      margin: 50px auto;
     }
     
     .feature {
       height: 850px;
-      padding: 30px 0 0px 0;
+      padding: 30px 0 0 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border: 1px solid #e4e4e4;
+      border-radius: 5px;
+      box-shadow: 2px 2px 12px 2px #dedede;
       
       .feature-label {
         text-align: right;
+        //border: 1px solid #e4e4e4;
+        border-radius: 5px;
+        background: linear-gradient(45deg,transparent,#000000db);
+        color: #fff;
+        margin: 0 32px 32px;
         padding: 32px;
         display: flex;
         flex-direction: column;
@@ -469,7 +494,7 @@ const RenderWrapper = styled.div`
         
         .r-lbl {
           border-bottom: 2px solid #2b2f3e;
-          color: #2b2f3e;
+          //color: #2b2f3e;
           font-size: 1.7rem;
           padding: 0 16px;
           display: inline-block;
@@ -487,14 +512,14 @@ const RenderWrapper = styled.div`
         
         .triplet-item {
           padding: 32px;
-          box-shadow: 2px 7px 16px #afafaf;
+          box-shadow: 1px 1px 0px #afafaf;
           position: absolute;
           box-sizing: border-box;
           width: 350px;
           height: 270px;
           
           &.red {
-            background-color: red;
+            background-color: #ff0000e0;
             color: white;
             position: absolute;
             left: 350px;
@@ -532,6 +557,20 @@ const RenderWrapper = styled.div`
     }
   }
   
+   @media only screen and (max-width: 1024px) {
+    .feature-wrapper {
+      
+      .feature {
+        height: 900px;
+        
+        .feature-label {
+          
+          .r-sub-title {
+            width: 90%;
+          }
+      }
+    }
+  }
    @media only screen and (max-width: 768px) {
     .feature-wrapper {
       
@@ -556,13 +595,14 @@ const RenderWrapper = styled.div`
       }
       
       .feature {
-        height: auto;
+        height: auto !important;
         padding: 16px 10px;
         
         .feature-label {
-          padding: 0;
+          padding: 0 10px;
           text-align: left;
           align-items: center;
+          margin: 0;
           
           .r-sub-title {
             width: 100%;

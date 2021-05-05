@@ -36,6 +36,17 @@ li, ul {
     color: white;
 }
 
+.ln-dt {
+    content: url("./images/dutch_flag_round.png");
+    height: 20px;
+    width: 20px;
+}
+.ln-en {
+    content: url("./images/Eng_flag_round_shiney.jpg");
+    height: 20px;
+    width: 20px;
+}
+
 
 h1 {
     font-size: 30px;
@@ -188,7 +199,7 @@ main {
     max-width: 1400px;
     box-sizing: border-box;
     padding: 0;
-    background-image: url('./slides/pic1.jpeg');
+    background-image: url('./slides/banner_03.jpg');
     background-repeat: no-repeat;
     color: white;
     background-size: 100% 100%;
@@ -276,6 +287,7 @@ main {
 .home-slide {
     width: 100%;
     position: absolute;
+    color: #333333;
     transition: all 0.7s cubic-bezier(0.63, 0.01, 0.5, 0.96);
 }
 .home-msg {
