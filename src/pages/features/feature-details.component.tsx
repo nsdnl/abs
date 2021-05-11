@@ -119,6 +119,7 @@ Warning: If you don’t want to look like an underwear model do not go any furth
               Concurrentievoordeel behalen, Verhoogde acceleratie en kracht, Verbeterd evenwicht en
               lichaamsbewustzijn, Verbeterde kracht, Verbeterde uithoudingsvermogen en het vermogen om snel
               te herstellen van trainingen en competitie.`,
+              style: {height: '300px'},
               type: 'red'
             },
             {
@@ -213,7 +214,7 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
           ]
         },
         {
-          label: 'Feeling alive/life booster:',
+          label: 'Feeling alive/life booster',
           labelDt: `Levens booster`,
           img: 'images/LifeBooster01.jpg',
           height: '880px',
@@ -438,9 +439,9 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
 }
 
 const RenderWrapper = styled.div`
-  background-color: white;
   padding: 50px 0 0;
   color: #666;
+  background-color: #efeff1;
   
   .title {
     text-transform: uppercase;
@@ -478,7 +479,8 @@ const RenderWrapper = styled.div`
       background-size: 100%;
       border: 1px solid #e4e4e4;
       border-radius: 5px;
-      box-shadow: 2px 2px 12px 2px #dedede;
+      box-shadow: 2px 2px 17px 3px #888888;
+      background-color: #fff;
       
       .feature-label {
         text-align: right;
@@ -493,12 +495,14 @@ const RenderWrapper = styled.div`
         align-items: flex-end;
         
         .r-lbl {
-          border-bottom: 2px solid #2b2f3e;
+          border-bottom: 2px solid #fff;
           //color: #2b2f3e;
-          font-size: 1.7rem;
+          font-size: 2rem;
           padding: 0 16px;
           display: inline-block;
           text-transform: uppercase;
+          font-weight: 500;
+          margin-bottom: 10px;
         }
         
         .r-sub-title {
