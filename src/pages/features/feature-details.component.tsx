@@ -267,7 +267,7 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
             {
               label: 'Approach',
               style: {height: '500px'},
-              badge: true,
+              badge: false,
               descriptionDt: `Trimester 1: omvat gerichte cardio- en aangepaste krachttraining gericht op de
               belangrijkste spiergroepen. Voorbereidingsoefeningen om de bevalling en bevalling
               te vergemakkelijken en tegelijkertijd aan het lichaamsbewustzijn te werken.
@@ -294,7 +294,7 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
             },
             {
               label: 'Recommended For',
-              style: {border: '1px solid #6b6b6b', top: 0, left: '350px', height: '230px'},
+              style: {border: '0px solid #6b6b6b', top: 0, left: '350px', height: '230px'},
               description: `woman who are expecting and want the best for themselves and their unborn child during all trimesters.`,
               descriptionDt: `Zwangere vrouwen in alle trimesters die het beste voor zichzelf en hun ongeboren
               kind willen.`,
@@ -516,14 +516,14 @@ const RenderWrapper = styled.div`
         
         .triplet-item {
           padding: 32px;
-          box-shadow: 1px 1px 0px #afafaf;
+          //box-shadow: 1px 1px 0px #afafaf;
           position: absolute;
           box-sizing: border-box;
           width: 350px;
           height: 270px;
           
           &.red {
-            background-color: #ff0000e0;
+            background-color: #ff0000c9;
             color: white;
             position: absolute;
             left: 350px;
@@ -532,8 +532,10 @@ const RenderWrapper = styled.div`
             box-sizing: border-box;
           }
           &.white {
-            background-color: white;
+            background-color: #ffffffc9;
             top: 270px;
+            color: #666;
+            border: 1px solid #dcdcdc;
             
             .snd-label {
               color: #2b2f3e;

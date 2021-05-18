@@ -28,8 +28,8 @@ export class FooterComponent extends PureComponent<any, any> {
                 },
                 {
                     title: 'RESOURCES', titleDt: 'BRONNEN', items: [
-                        {label: 'Partners', labelDt:'Partners', url: '#/partners'},
-                        {label: 'Equipment', labelDt: 'Artikelen', url: '#/equipment'}
+                        {label: 'Partners', disabled: true, labelDt:'Partners', url: '#/partners'},
+                        {label: 'Equipment', disabled: true, labelDt: 'Artikelen', url: '#/equipment'}
                     ]
                 }
             ]
@@ -42,8 +42,9 @@ export class FooterComponent extends PureComponent<any, any> {
             return <div key={`section-${i}`} className={'footer-section'}>
                 <label>{section[`title${language}`]}</label>
                 <ul className={'section-list'}>
-                    {section.items.map((item: any, j: number) => <li key={`section-item-${j}`}>
-                        {item.url ? <a href={item.url}>{item[`label${language}`]}</a> : <span>{item[`label${language}`]}</span>}
+                    {section.items.map((item: any, j: number) => <li key={`section-item-${j}`} className={`${item.disabled ? 'disabled': ''}`}>
+                        {item.disabled && <span>{item[`label${language}`]}</span>}
+                        {!item.disabled && (item.url ? <a href={item.url}>{item[`label${language}`]}</a> : <span>{item[`label${language}`]}</span>)}
                     </li>)}
                 </ul>
             </div>
@@ -53,7 +54,7 @@ export class FooterComponent extends PureComponent<any, any> {
     render(): React.ReactNode {
         return <div className={'footer'}>
             <div className={'footer-content'}>{this.getSections()}</div>
-            <div className={'footer-copy'}><i>Copyright @2020 All rights reserved to AdvanceBodySystem</i></div>
+            <div className={'footer-copy'}><i style={{'color': "white"}}>Copyright @2020 All rights reserved to AdvanceBodySystem</i></div>
         </div>
     }
 }
