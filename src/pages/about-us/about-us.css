@@ -271,6 +271,11 @@
         display: block;
     }
 
+    .float-right {
+        position: static;
+        display: none;
+    }
+
 
     .sc-child {
         width: 100%;
@@ -372,12 +377,13 @@
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
     }
-    .float-bottom img {
+    .float-bottom .img {
         width: 100%;
         box-shadow: none;
         display: block;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
+        height: 300px;
     }
     .float-content {
         padding: 10px;

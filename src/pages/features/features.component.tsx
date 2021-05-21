@@ -125,8 +125,8 @@ group we can start you journey.`,
     return features.map((feature: any, i: number) => {
       return <a className={'feature'} key={`feature-${i}`} href={`#/features-details/${feature.url}`}>
         <div className={'img-section'}>
-          <div className={`${feature.id} img`} />
-          {/*<img src={feature.img} alt={feature.alt}/>*/}
+          {/*<div className={`${feature.id} img`} />*/}
+          <img src={feature.img} alt={feature.alt}/>
           <div className={'img-text'}>{feature[`imgText${language}`]}</div>
         </div>
         <div className={'text-section'}>
@@ -208,7 +208,7 @@ const FeaturesWrapper = styled.div`
           height: 250px;
           overflow: hidden;
           position: relative;
-          .img {
+          img {
             width: 100%;
             height: 100%;
             transition: all .3s ease-in-out;

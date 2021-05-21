@@ -217,7 +217,7 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
           label: 'Feeling alive/life booster',
           labelDt: `Levens booster`,
           img: 'images/LifeBooster01.jpg',
-          height: '880px',
+          height: '900px',
           id: 'metabolic-conditioning',
           subTitle: `Some call it boot camp or interval training or even metabolic conditioning. ABS Feeling alive is so much more than just interval training or switching from exercise stations in a hurry. We custom design a plan with a combination the of right cardio and strength workouts. No two plans are the same. Don’t expect to spend a long time doing endless, slow cardiovascular training nor uninspiring straight-set strength training workouts. At ABS we give a new spin to interval training to keep you wanting more without the injuries due to the fact we put the focus on YOU. Let’s break boundaries not your back.`,
           subTitleDt: `Sommigen noemen het bootcamp of intervaltraining of zelfs metabolische conditionering. ABS
