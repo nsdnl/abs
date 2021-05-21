@@ -26,12 +26,12 @@ export class FooterComponent extends PureComponent<any, any> {
                         {label: 'Sunday ( 09:30 - 15:00 )', labelDt: 'Zondag ( 09:30 - 15:00 )'},
                     ]
                 },
-                {
-                    title: 'RESOURCES', titleDt: 'BRONNEN', items: [
-                        {label: 'Partners', disabled: true, labelDt:'Partners', url: '#/partners'},
-                        {label: 'Equipment', disabled: true, labelDt: 'Artikelen', url: '#/equipment'}
-                    ]
-                }
+                // {
+                //     title: 'RESOURCES', titleDt: 'BRONNEN', items: [
+                //         {label: 'Partners', disabled: true, labelDt:'Partners', url: '#/partners'},
+                //         {label: 'Equipment', disabled: true, labelDt: 'Artikelen', url: '#/equipment'}
+                //     ]
+                // }
             ]
         };
     }

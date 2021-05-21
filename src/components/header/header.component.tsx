@@ -52,7 +52,7 @@ export class HeaderComponent extends PureComponent<any, any> {
 
     getLanguageToggle = (menu: any) => {
         const {language} = this.state;
-        let cls = language === 'Dt' ? 'ln-dt' : 'ln-en';
+        let cls = language !== 'Dt' ? 'ln-dt' : 'ln-en';
         return menu.language ?
             <span className={`language`} onClick={this.toggleLanguage}>| <span className={`${cls}`}></span> {menu[`label${language}`]}</span> : '';
     };

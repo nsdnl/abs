@@ -11,8 +11,8 @@
 .block-1 {
     padding: 60px 80px 100px 80px;
     position: relative;
-    background-image: url('../../slides/pic1.jpeg');
-    background-position: 0px 263px;
+    background-image: url('../../images/about_us_banner.jpg');
+    background-position: 0 263px;
 }
 
 .sign {
@@ -52,6 +52,9 @@
 .avatar {
     margin-left: 40px;
     flex-direction: column;
+    background: url('../../images/about_us_our_gym.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .avatar .avatar-img {
@@ -133,6 +136,13 @@
     right: 0;
     top: -54px;
     z-index: 1;
+    background-image: url('../../images/about_us_philosophy.jpg');
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+}
+
+.float-right:hover {
+    background-image: url('../../images/about_us_philosophy_hover.jpg');
 }
 
 .float-right img {
@@ -165,9 +175,17 @@
     display: flex;
 }
 
-.float-bottom img {
+.float-bottom .img {
     width: 222px;
     box-shadow: 0 8px 12px 0 #c3c3c3;
+    background-image: url('../../images/about_us_philosophy_mission.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.float-bottom:hover .img {
+    background-image: url('../../images/about_us_philosophy_mission_hover.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .second-txt {
@@ -228,6 +246,10 @@
 }
 
 @media only screen and (max-width: 1023px) {
+
+    .block-1 {
+        background-image: url('../../images/about_us_banner_iPad.jpg');
+    }
     .block-2 {
         padding: 30px;
     }
@@ -249,10 +271,19 @@
         display: block;
     }
 
+
+    .sc-child {
+        width: 100%;
+    }
+
     .float-right, .float-bottom {
-        position: relative;
-        top: -125px;
-        height: auto;
+        /*position: relative;*/
+        /*top: -125px;*/
+        /*height: auto;*/
+    }
+
+    .float-right img {
+        display: none;
     }
 
     .float-right {
@@ -260,7 +291,7 @@
     }
 
     .float-bottom img {
-        display: none;
+        /*display: none;*/
     }
 
     .red-left-section {
@@ -278,6 +309,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+    .block-1 {
+        background-image: url('../../images/about_us_banner_mobile.jpg');
+    }
+
     .ab-title {
         letter-spacing: 0;
     }
@@ -292,6 +328,10 @@
         border-radius: 5px;
         padding: 10px;
         margin-top: 20px;
+    }
+
+    .sc-child {
+        width: 100%;
     }
 
     .block-2 {
@@ -340,7 +380,7 @@
         border-top-left-radius: 5px;
     }
     .float-content {
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .red-left-section {

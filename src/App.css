@@ -72,6 +72,7 @@ main {
     min-height: 100vh;
     overflow: auto;
     font-size: 20px;
+    position: relative;
 }
 
 .title {
@@ -205,7 +206,7 @@ main {
     max-width: 1400px;
     box-sizing: border-box;
     padding: 0;
-    background-image: url('./slides/banner_03.jpg');
+    background-image: url('./images/home_banner.jpg');
     background-repeat: no-repeat;
     color: white;
     background-size: 100% 100%;
@@ -273,10 +274,14 @@ main {
 
 /********** HOME page css starts *********************/
 .home-page {
-    padding: 100px;
-    position: relative;
+    padding: 100px 100px 20px 100px;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 .home-content {
     position: relative;
@@ -308,8 +313,9 @@ main {
     width: 100%;
     position: absolute;
     color: #333333;
-    transition: all 0.7s cubic-bezier(0.63, 0.01, 0.5, 0.96);
+    transition: all 1.2s cubic-bezier(0.63, 0.01, 0.5, 0.96);
 }
+
 .home-msg {
     border: 4px solid #f72c2d;
     padding: 0 10px;
@@ -324,6 +330,9 @@ main {
 /********** HOME page css ends *********************/
 
 
+.home-filler {
+    flex: 1;
+}
 @media only screen and (max-width: 1023px) {
     .header-area {
         padding-right: 0;
@@ -376,7 +385,13 @@ main {
     /**** Home page css starts **/
     .home-page {
         padding: 40px 0;
+        position: relative;
     }
+
+    .home-filler {
+        flex: 0;
+    }
+
     .home-slides-container {
         width: 100%;
         right: 0;
@@ -388,16 +403,35 @@ main {
     h1 {
         font-size: 24px;
     }
+}
+
+@media only screen and (max-width: 768px) {
     main {
+        background-image: url('./images/home_banner_iPad.jpg');
     }
+}
+@media only screen and (max-width: 768px) and (min-width: 501px) {
     .home-content {
-        width: 100%;
+        width: 330px;
     }
 }
 
 @media only screen and (max-width: 500px) {
+
+    main {
+        background-image: url('./images/home_banner_mobile.jpg');
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-msg {
+        display: none;
+    }
     .home-page {
         padding: 50px 10px;
+        top: 270px;
     }
     .header-menus-mobile {
         position: static;
@@ -406,7 +440,7 @@ main {
         top: 120px;
     }
     .footer-content {
-        /*display: block;*/
+        display: block;
         padding: 20px;
         text-align: center;
     }

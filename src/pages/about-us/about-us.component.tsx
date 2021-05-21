@@ -92,14 +92,15 @@ Met dit als uitgangspunt bieden wij een op maat gemaakte aanpak voor individuele
                         <div>
                             {state[`ourGymText${language}`]}
                         </div>
-                        <a href={'#/home'}>read more...</a>
+                        {/*<a href={'#/home'}>read more...</a>*/}
                     </div>
-
-                    <a href={'#/home'} className={'flexible avatar'}>
-                        <div className={'avatar-img'}>
-                            <iframe className={'avatar-content'} src={videoUrl}></iframe>
-                        </div>
-                    </a>
+                    <div className={'flexible avatar'}>
+                    </div>
+                    {/*<a href={'#/home'} className={'flexible avatar'}>*/}
+                    {/*    <div className={'avatar-img'}>*/}
+                    {/*        <iframe className={'avatar-content'} src={videoUrl}></iframe>*/}
+                    {/*    </div>*/}
+                    {/*</a>*/}
                 </div>
             </div>
 
@@ -115,10 +116,11 @@ Met dit als uitgangspunt bieden wij een op maat gemaakte aanpak voor individuele
                     </div>
                 </div>
                 <div className={'float-right'}>
-                    <img src={'profile6.jpeg'} alt={''}/>
+                    {/*<img src={'profile6.jpeg'} alt={''}/>*/}
                 </div>
                 <div className={'float-bottom'}>
-                    <img src={'profile1.jpeg'} alt={''}/>
+                    {/*<img src={'profile1.jpeg'} alt={''}/>*/}
+                    <div className={'img'}></div>
                     <div className={'float-content'}>
                         <div className={'sc-child'}>
                             <div>{state[`missionTitle${language}`]}</div>

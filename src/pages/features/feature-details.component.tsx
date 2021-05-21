@@ -59,7 +59,7 @@ Warning: If you don’t want to look like an underwear model do not go any furth
         {
           label: 'Muscle building & strength training',
           labelDt: `Spieropbouw & krachttraining`,
-          img: 'images/muscle_building_02.jpg',
+          img: 'images/le_mb_hover.jpg',
           id: 'muscle-strength',
           subTitle: `Gain significant muscle mass and get sculpted! Increase not only muscle mass but also look like a chiselled god. Only for those who want to look like a super hero saving the planet. Or a super villain striking fear in your enemies.`,
           subTitleDt: `Krijg aanzienlijke spiermassa en word ripped! Vergroot niet alleen de spiermassa, maar zie er ook uit
@@ -343,7 +343,7 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
         {
           label: 'Daddy’s Muscle/toning Workout',
           labelDt: `Papa training`,
-          img: 'images/daddy_training_01.jpg',
+          img: 'images/le_ds_hover.jpg',
           height: '1000px',
           id: 'daddy-special',
           subTitle: `Achieving dad strength isn't an easy process but getting a dad body on the other hand is. You know, the dads who look masculine but are (slightly) overweight. The physical grind of child-rearing will leave you with an impressive array of aches and pains if you're not ready for it. So whether you’re a new father or if you're expecting a bundle of joy in the near future, do yourself a favor and get prepared!`,
