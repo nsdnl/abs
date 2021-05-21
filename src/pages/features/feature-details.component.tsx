@@ -603,6 +603,7 @@ const RenderWrapper = styled.div`
       .feature {
         height: auto !important;
         padding: 16px 10px;
+        background-image: none !important;
         
         .feature-label {
           padding: 0 10px;
