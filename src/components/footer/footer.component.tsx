@@ -20,7 +20,7 @@ export class FooterComponent extends PureComponent<any, any> {
                         {label: 'Monday ( 09:00 - 11:30, 12:30 - 19:30 )', labelDt: 'Maandag ( 09:00 - 11:30, 12:30 - 19:30 )'},
                         {label: 'Tuesday ( 09:00 - 11:30, 12:30 - 19:30 )', labelDt: 'Dinsdag ( 09:00 - 11:30, 12:30 - 19:30 )'},
                         {label: 'Wednesday ( 09:00 - 20:00 )', labelDt: 'Woensdag ( 09:00 - 20:00 )'},
-                        {label: 'Thursday ( 09:00 - 11:30, 12:30 - 19:300 )', labelDt: 'Donderdag ( 09:00 - 11:30, 12:30 - 19:300 )'},
+                        {label: 'Thursday ( 09:00 - 11:30, 12:30 - 19:30 )', labelDt: 'Donderdag ( 09:00 - 11:30, 12:30 - 19:30 )'},
                         {label: 'Friday ( 09:00 - 11:30, 12:30 - 19:30 )', labelDt: 'Vrijdag ( 09:00 - 11:30, 12:30 - 19:30 )'},
                         {label: 'Saturday ( no training )', labelDt: 'Zaterdag ( no training )'},
                         {label: 'Sunday ( 09:30 - 15:00 )', labelDt: 'Zondag ( 09:30 - 15:00 )'},

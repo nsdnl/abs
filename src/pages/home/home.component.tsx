@@ -22,12 +22,12 @@ export class HomeComponent extends PureComponent<any, any> {
                     label: 'The aim of Advanced body system is to provide comprehensive approach for fitness for longevity and sustainability.',
                     labelDt: 'Het doel van Advanced Body System is om door middel van een uitgebreide aanpak in fitness te zorgen voor een duurzaamheid en een prettige levensduur.'
                 },
-                {
-                    title: 'With Khivo',
-                    titleDt: 'Met Khivo',
-                    label: 'We achieve this by taking an integrated approach to the wellness of our clients which includes advising on lifestyle, healthy eating and stress management.',
-                    labelDt: 'Wij bereiken dit door een geïntegreerde aanpak van het welzijn van onze cliënten dit omvat adviseren op het gebied van levensstijl, gezond eten en stress beheer.'
-                },
+                // {
+                //     title: 'With Khivo',
+                //     titleDt: 'Met Khivo',
+                //     label: 'We achieve this by taking an integrated approach to the wellness of our clients which includes advising on lifestyle, healthy eating and stress management.',
+                //     labelDt: 'Wij bereiken dit door een geïntegreerde aanpak van het welzijn van onze cliënten dit omvat adviseren op het gebied van levensstijl, gezond eten en stress beheer.'
+                // },
             ],
             selectedSlide: 1
         }

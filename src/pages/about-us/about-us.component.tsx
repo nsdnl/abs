@@ -64,6 +64,7 @@ The main aim of Advanced Body System is to focus and improve the health span of 
             missionTextDt: `Bij Advanced Body System begrijpen we dat ieder lichaam anders is en komt met eigen uitdagingen. 
 Met dit als uitgangspunt bieden wij een op maat gemaakte aanpak voor individuele behoeften. Fitness zou prettig, doel gericht maar vooral effectief moeten zijn. Iedere deelnemer moet zich vermaken tijdens het bevorderen van de vitaliteit door bewezen fitness. Wij bieden de kennis en vaardigheden aan onze cliënten voor een blijvend resultaat. Je moet het alleen willen`,
             missionTitle: 'OUR MISSION',
+            missionTitleDt: 'ONZE MISSIE',
             headerText: `AdvancedBodySystem envisions working with various professionals to offer the best tailor-made service to achieve fitness success. The main aim of AdvancedBodySystem is to focus on and improve the healthspan of current and later years your life.`,
             headerTextDt: `ABS voorziet een samenwerking met verschillende professionals om de beste op maat gemaakte service te bieden voor het behalen van fitnesssucces. Het belangrijkste doel van ABS is om u te concentreren op en het verbeteren van de gezondheid van uw huidige en latere jaren`
         };
@@ -95,6 +96,7 @@ Met dit als uitgangspunt bieden wij een op maat gemaakte aanpak voor individuele
                         {/*<a href={'#/home'}>read more...</a>*/}
                     </div>
                     <div className={'flexible avatar'}>
+                        <img src={'./images/about_us_our_gym.jpg'}/>
                     </div>
                     {/*<a href={'#/home'} className={'flexible avatar'}>*/}
                     {/*    <div className={'avatar-img'}>*/}
@@ -116,11 +118,14 @@ Met dit als uitgangspunt bieden wij een op maat gemaakte aanpak voor individuele
                     </div>
                 </div>
                 <div className={'float-right'}>
+                    <img src={'./images/about_us_philosophy_hover.jpg'} />
                     {/*<img src={'profile6.jpeg'} alt={''}/>*/}
                 </div>
                 <div className={'float-bottom'}>
                     {/*<img src={'profile1.jpeg'} alt={''}/>*/}
-                    <div className={'img'}></div>
+                    <div className={'img'}>
+                        <img src={'./images/about_us_philosophy_mission_hover.jpg'} />
+                    </div>
                     <div className={'float-content'}>
                         <div className={'sc-child'}>
                             <div>{state[`missionTitle${language}`]}</div>

@@ -2,7 +2,7 @@ import { Component } from 'react';
 import styled from 'styled-components';
 
 export class ContactUsComponent extends Component<any, any> {
-    ownerPhone = '+0617709888';
+    ownerPhone = '+31617709888';
     ownerEmail = 'khivo@advancedbodysystem.com';
     errorText = 'Invalid value';
     errorTextEmail = 'Invalid email address';
@@ -15,8 +15,8 @@ export class ContactUsComponent extends Component<any, any> {
         super(props);
         const language = localStorage.getItem('__ln') || '';
         this.state = {
-            mainTitle: 'TRAINING HOURS',
-            mainTitleDt: 'trainingsuren',
+            mainTitle: 'DIVINATION',
+            mainTitleDt: 'WAARZEGGERIJ',
             dutchPhone: 'Phone',
             dutchPhoneDt: 'Tel',
             language,
@@ -33,15 +33,16 @@ programma, de proef pt sessie is € 45, - ex btw.
             titleDt: `LAAT EEN BERICHT ACHTER`,
             subTitleDutch: `Heb je een brandende vraag na het lezen van het gehele site?
 Laat dan je contact gegevens achter en wij sturen jou z.s.m een antwoord`,
-            subTitle: `Want to be eligible for 1 free personal training trial session? Signup now and take advantage of the introduction to what Advanced Body System
+            subTitle: `Want to be eligible for 1 free personal training trial session? <br /> Signup now and take advantage of the introduction to what Advanced Body System
 has to offer you.`,
-            subTitleDt: `Wil je in aanmerking komen voor 1 gratis proefsessie personal training? Schrijf u nu in en profiteer van de introductie tot welk Advanced Body System
+            subTitleDt: `Wil je in aanmerking komen voor 1 gratis proefsessie personal training? <br /> Schrijf u nu in en profiteer van de introductie tot welk Advanced Body System
 u te bieden heeft.`,
             fields: [
                 {label: 'If you have any questions don’t hesitate to ask', labelDt: 'Mocht u nog vragen hebben, stel ze dan gerust', value: ''},
                 {label: 'Name', labelDt: 'Naam', value: '', required: true},
                 {label: 'Mobile', labelDt: 'Mobiele nr', value: '', required: true},
-                {label: 'Email', labelDt: 'Email adres', value: '', type: 'mobile', required: true}
+                {label: 'Email', labelDt: 'Email adres', value: '', type: 'mobile', required: true},
+                {label: 'Question', labelDt: 'Vraag', value: '', type: 'textarea'}
             ]
         }
     }
@@ -85,9 +86,12 @@ u te bieden heeft.`,
             return <div className={`field-row ${field.focus ? 'focused' : ''} ${field.error ? 'error' : ''}`}
                         key={`field_${i}`}>
                 <label>{field[`label${language}`]}</label>
-                <input onChange={(ev: any) => this.handleChange(field, ev.target.value)}
-                       onFocus={() => this.handleFocus(field, i)}
-                       onBlur={() => this.handleBlur(field, i)}/>
+                {field.type !== 'textarea' && <input onChange={(ev: any) => this.handleChange(field, ev.target.value)}
+                                                     onFocus={() => this.handleFocus(field, i)}
+                                                     onBlur={() => this.handleBlur(field, i)}/>}
+                {field.type === 'textarea' && <textarea onChange={(ev: any) => this.handleChange(field, ev.target.value)}
+                                                     onFocus={() => this.handleFocus(field, i)}
+                                                     onBlur={() => this.handleBlur(field, i)}/>}
                 {field.error && <span className={'error-txt'}>{field.error}</span>}
             </div>
         })
@@ -140,7 +144,6 @@ u te bieden heeft.`,
                 <div><a
                     href="mailto:khivo@advancedbodysystem.com?body='dummy body'&subject='dummy subject'">&#9993;: {this.ownerEmail}</a>
                 </div>
-                <div>{state[`dutchPhone${language}`]}: 0617709888</div>
             </div>
             <a className={'side-badge'} onClick={this.toggleTrialText}>
                 <label>{state[`trialBtnText${language}`]}</label>
@@ -156,7 +159,7 @@ u te bieden heeft.`,
         const state = this.state;
         return <Wrapper>
             <div className={'header'}>{state[`mainTitle${language}`]}</div>
-            <div>{state[`subTitle${language}`]}</div>
+            <div dangerouslySetInnerHTML={{__html: state[`subTitle${language}`]}} />
             {this.getContactForm()}
             {this.getSideBar()}
         </Wrapper>
@@ -165,7 +168,7 @@ u te bieden heeft.`,
 
 const Wrapper = styled.div`
   padding: 50px;
-  background-color: #232323db;
+  background-color: #2323239e;
   position: relative;
 
   .header {
@@ -189,10 +192,11 @@ const Wrapper = styled.div`
         transition: all 0.1s ease-in-out;
         transform-origin: left;
       }
-      input {
+      input, textarea {
         border: none;
         border-bottom: 1px solid white;
-        padding: 10px 0;
+        padding-bottom: 10px;
+        margin-top: 10px;
         width: 100%;
         background-color: transparent;
         color: white;
@@ -201,7 +205,7 @@ const Wrapper = styled.div`
       }
       
       &.error {
-        input {
+        input, textarea {
           border-color: red;
         }
         .error-txt {
