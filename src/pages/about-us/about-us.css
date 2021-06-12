@@ -266,6 +266,13 @@
 .block-5 {
 }
 
+.mobile-only {
+    display: none;
+}
+.desktop-only {
+    display: block;
+}
+
 @media only screen and (max-width: 1023px) {
 
     .block-1 {
@@ -338,6 +345,7 @@
 
     .block-1 {
         background-image: url('../../images/about_us_banner_mobile.jpg');
+        background-size: 100% 100%;
     }
 
     .ab-title {
@@ -424,5 +432,14 @@
         width: 100%;
         padding: 0;
         margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mobile-only {
+        display: block;
+    }
+    .desktop-only {
+        display: none;
     }
 }

@@ -38,12 +38,23 @@ has to offer you.`,
             subTitleDt: `Wil je in aanmerking komen voor 1 gratis proefsessie personal training? <br /> Schrijf u nu in en profiteer van de introductie tot welk Advanced Body System
 u te bieden heeft.`,
             fields: [
-                {label: 'If you have any questions don’t hesitate to ask', labelDt: 'Mocht u nog vragen hebben, stel ze dan gerust', value: ''},
+                {
+                    label: 'If you have any questions don’t hesitate to ask',
+                    labelDt: 'Mocht u nog vragen hebben, stel ze dan gerust',
+                    value: ''
+                },
                 {label: 'Name', labelDt: 'Naam', value: '', required: true},
                 {label: 'Mobile', labelDt: 'Mobiele nr', value: '', required: true},
                 {label: 'Email', labelDt: 'Email adres', value: '', type: 'mobile', required: true},
                 {label: 'Question', labelDt: 'Vraag', value: '', type: 'textarea'}
             ]
+        }
+    }
+
+    componentDidMount() {
+        console.log('PATH ', window.location.hash);
+        if (window.location.hash === '#/contact-us') {
+            this.setState({bgClass: 'cover'})
         }
     }
 
@@ -89,9 +100,10 @@ u te bieden heeft.`,
                 {field.type !== 'textarea' && <input onChange={(ev: any) => this.handleChange(field, ev.target.value)}
                                                      onFocus={() => this.handleFocus(field, i)}
                                                      onBlur={() => this.handleBlur(field, i)}/>}
-                {field.type === 'textarea' && <textarea onChange={(ev: any) => this.handleChange(field, ev.target.value)}
-                                                     onFocus={() => this.handleFocus(field, i)}
-                                                     onBlur={() => this.handleBlur(field, i)}/>}
+                {field.type === 'textarea' &&
+                <textarea onChange={(ev: any) => this.handleChange(field, ev.target.value)}
+                          onFocus={() => this.handleFocus(field, i)}
+                          onBlur={() => this.handleBlur(field, i)}/>}
                 {field.error && <span className={'error-txt'}>{field.error}</span>}
             </div>
         })
@@ -126,7 +138,6 @@ u te bieden heeft.`,
         </div>;
     };
 
-
     toggleTrialText = () => {
         this.setState({showTrialTxt: !this.state.showTrialTxt});
     };
@@ -158,32 +169,50 @@ u te bieden heeft.`,
         const {language} = this.state;
         const state = this.state;
         return <Wrapper>
-            <div className={'header'}>{state[`mainTitle${language}`]}</div>
-            <div dangerouslySetInnerHTML={{__html: state[`subTitle${language}`]}} />
-            {this.getContactForm()}
-            {this.getSideBar()}
+            <div className={`contact-us-cont ${state.bgClass}`}>
+                <div className={'header'}>{state[`mainTitle${language}`]}</div>
+                <div dangerouslySetInnerHTML={{__html: state[`subTitle${language}`]}}/>
+                {this.getContactForm()}
+                {this.getSideBar()}
+            </div>
         </Wrapper>
     }
 }
 
 const Wrapper = styled.div`
-  padding: 50px;
-  background-color: #2323239e;
-  position: relative;
+  
+  .contact-us-cont {
+    background-image: url("/images/contact_bg.jpg");
+    padding: 50px;
+    background-color: #2323239e;
+    position: relative;
+    
+    &.cover {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  main {
+    height: auto;
+  }
 
   .header {
     text-transform: uppercase;
     font-size: 2.5rem;
     letter-spacing: 16px;
   }
-  
+
   .content {
     width: 50%;
-    
+
     .field-row {
       height: 80px;
       position: relative;
-      
+
       label {
         font-size: 1rem;
         position: absolute;
@@ -192,6 +221,7 @@ const Wrapper = styled.div`
         transition: all 0.1s ease-in-out;
         transform-origin: left;
       }
+
       input, textarea {
         border: none;
         border-bottom: 1px solid white;
@@ -203,11 +233,12 @@ const Wrapper = styled.div`
         outline: none;
         font-size: 1rem;
       }
-      
+
       &.error {
         input, textarea {
           border-color: red;
         }
+
         .error-txt {
           color: red;
           position: absolute;
@@ -215,20 +246,22 @@ const Wrapper = styled.div`
           bottom: 10px;
         }
       }
-      
+
       &.focused {
         label {
           opacity: 0.6;
           transform: scale(0.9) translateY(-24px);
         }
-        input {}
+
+        input {
+        }
       }
-      
+
     }
-    
+
     .action {
       text-align: right;
-      
+
       .submit-btn {
         padding: 10px;
         width: 100px;
@@ -237,7 +270,7 @@ const Wrapper = styled.div`
         color: white;
         cursor: pointer;
         margin-top: 20px;
-        
+
         &:hover {
           background: white;
           color: #666;
@@ -245,7 +278,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  
+
   .side-bar {
     position: absolute;
     background: red;
@@ -253,24 +286,26 @@ const Wrapper = styled.div`
     bottom: 0;
     padding: 20px 32px 30px 32px;
     width: 300px;
-    
+
     .side-header {
       font-size: 2rem;
       font-weight: 500;
     }
+
     .side-content {
       font-size: 1.5rem;
-      
+
       a {
         text-decoration: none;
         color: white;
-        
-        
+
+
         .sm-txt {
           font-size: 1rem;
         }
       }
     }
+
     .side-badge {
       padding: 10px;
       cursor: pointer;
@@ -281,47 +316,53 @@ const Wrapper = styled.div`
       text-align: center;
       box-shadow: 0px 6px 16px #2d2d2d;
       margin-top: 30px;
-      
+
       &:hover {
         background: #dcdcdc;
       }
+
       &:active {
         background: grey;
       }
+
       label {
         cursor: pointer;
       }
     }
   }
-  
+
   @media only screen and (max-width: 500px) {
     padding: 20px 10px;
+    //background-image: url("/images/contact_bg_mobile.jpg");
     .header {
     }
-    
+
     .content {
       width: 100%;
       margin-bottom: 20px;
+
       .field-row {
-        
+
       }
     }
-    
+
     .side-bar {
       position: static;
       width: 100%;
       box-sizing: border-box;
       padding: 10px;
-      
+
       .side-header {
-      
+
       }
+
       .side-content {
-        
+
       }
+
       .side-badge {
         label {
-          
+
         }
       }
     }

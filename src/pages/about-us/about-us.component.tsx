@@ -96,7 +96,8 @@ Met dit als uitgangspunt bieden wij een op maat gemaakte aanpak voor individuele
                         {/*<a href={'#/home'}>read more...</a>*/}
                     </div>
                     <div className={'flexible avatar'}>
-                        <img src={'./images/about_us_our_gym.jpg'}/>
+                        <img className={'desktop-only'} src={'./images/about_us_our_gym.jpg'}/>
+                        <img className={'mobile-only'} src={'./images/about_us_our_gym_mobile.jpg'}/>
                     </div>
                     {/*<a href={'#/home'} className={'flexible avatar'}>*/}
                     {/*    <div className={'avatar-img'}>*/}
