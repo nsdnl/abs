@@ -96,7 +96,7 @@ Warning: If you don’t want to look like an underwear model do not go any furth
           label: 'Sport – Specific training',
           labelDt: `Sport specifiek trainen`,
           img: 'images/sport_specif_training_01.jpg',
-          height: '765px',
+          height: '800px',
           id: 'sport-specific-training',
           subTitle: `Enhance your power and stamina for a particular sport. Great for off-season training to not reduce performance when getting back on pitch, mat or in the ring. We have a training customised for you.`,
           subTitleDt: `Verbeter uw kracht en uithoudingsvermogen voor een bepaalde sport. Geweldig voor
@@ -217,7 +217,7 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
           label: 'Feeling alive/life booster',
           labelDt: `Levens booster`,
           img: 'images/LifeBooster01.jpg',
-          height: '900px',
+          height: '935px',
           id: 'metabolic-conditioning',
           subTitle: `Some call it boot camp or interval training or even metabolic conditioning. ABS Feeling alive is so much more than just interval training or switching from exercise stations in a hurry. We custom design a plan with a combination the of right cardio and strength workouts. No two plans are the same. Don’t expect to spend a long time doing endless, slow cardiovascular training nor uninspiring straight-set strength training workouts. At ABS we give a new spin to interval training to keep you wanting more without the injuries due to the fact we put the focus on YOU. Let’s break boundaries not your back.`,
           subTitleDt: `Sommigen noemen het bootcamp of intervaltraining of zelfs metabolische conditionering. ABS
@@ -294,7 +294,7 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
             },
             {
               label: 'Recommended For',
-              style: {border: '0px solid #6b6b6b', top: 0, left: '350px', height: '230px'},
+              style: {border: '1px solid #6b6b6b', top: 0, left: '350px', height: '230px'},
               description: `woman who are expecting and want the best for themselves and their unborn child during all trimesters.`,
               descriptionDt: `Zwangere vrouwen in alle trimesters die het beste voor zichzelf en hun ongeboren
               kind willen.`,
@@ -413,7 +413,7 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
     return <div className={'feature-wrapper'}>
       {items.map((item: any, i: number) => {
         return <div key={`item-${i}`}>
-          <div className={'feature'} id={item.id} style={{backgroundImage: `url(${item.img})`, height: item.height}}>
+          <div className={'feature'} id={item.id} style={{ height: item.height}}>
             <div className={'feature-label'}>
               <span className={'r-lbl'}>{item[`label${language}`]}</span>
               <div className={'r-sub-title'}>{item[`subTitle${language}`]}</div>
