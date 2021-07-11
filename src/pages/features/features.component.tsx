@@ -16,7 +16,7 @@ export class FeaturesComponent extends Component<any, any> {
           labelDt: 'Weight/Fat management',
           imgText: 'If weight is an issue this Lifestyle Enhancer will let you lose the excess weight and keep it off. We will combine sustainable training with nutritional adjustments to achieve the ideal weight.',
           imgTextDt: `Als gewicht een probleem is dan zorgt deze Lifestyle Enhancer ervoor dat je het overtollige gewicht verliest en het eraf houdt. We combineren duurzame trainingen met voedingsaanpassingen om het ideale gewicht te bereiken.`,
-          img: 'images/weight_management_02.jpg',
+          img: 'images/le_wm_mgmt.png',
           url: 'weight-fat-management',
           id: 'weight-fat-management',
           description: 'hell this is sample text'
@@ -109,7 +109,7 @@ group we can start you journey.`,
         {
           label: 'Daddy Special',
           labelDt: 'Daddy Special',
-          img: 'images/daddy_training_01.jpg',
+          img: 'images/le_ds.png',
           imgTextDt: `Het bereiken van papakracht is geen eenvoudig proces, maar het krijgen van een papalichaam daarin tegen wel. Door de fysieke inspanningen van het opvoeden van kinderen laat je achter met een indrukwekkende reeks pijntjes en kwalen als je er niet klaar voor bent. Dus of je nu een nieuwe vader bent of in de nabije toekomst een hoop vreugde verwacht, doe jezelf een plezier en bereid je erop voor.`,
           imgText: `Achieving dad strength isn't an easy process but getting a dad body on the other hand is. The physical grind of child-rearing will leave you with an impressive array of aches and pains if you're not ready for it. So whether you’re a new father or if you're expecting a bundle of joy in the near future, do yourself a favor and get prepared.`,
           url: 'daddy-special',
@@ -203,7 +203,7 @@ const FeaturesWrapper = styled.div`
       }
       
       .img-section {
-          background-color: grey;
+          background-color: whitesmoke;
           width: 100%;
           height: 250px;
           overflow: hidden;

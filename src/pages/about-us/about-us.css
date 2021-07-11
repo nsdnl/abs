@@ -137,7 +137,10 @@
     right: 0;
     top: -54px;
     z-index: 1;
-    background-image: url('../../images/about_us_philosophy.jpg');
+    background-color: white;
+    border: 1px solid #c5c5c5;
+    box-sizing: border-box;
+    background-image: url('../../images/about_us_philosophy.png');
     background-size: 250px 250px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -190,7 +193,7 @@
 .float-bottom .img {
     width: 222px;
     box-shadow: 0 8px 12px 0 #c3c3c3;
-    background-image: url('../../images/about_us_philosophy_mission.jpg');
+    background-image: url('../../images/about_us_philosophy_mission.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -441,5 +444,8 @@
     }
     .desktop-only {
         display: none;
+    }
+    .float-bottom > .img {
+        background-image: url('../../images/about_us_philosophy_mission_mobile.png');
     }
 }

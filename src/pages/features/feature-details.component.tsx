@@ -14,8 +14,12 @@ export class FeatureDetailsComponent extends Component<any, any> {
           label: 'Weight/Fat management',
           labelDt: `Gewichtsmanagement`,
           img: 'images/weight_management_02.jpg',
-          height: '1000px',
+          height: '900px',
           id: 'weight-fat-management',
+          rightLink: {
+            label: 'WEIGHT/FAT MANAGEMENT',
+            url: 'https://advancedbodysystem.mypthub.net/buy-packages/143884/buy'
+          },
           subTitle: `Reduce body 1 to 5 kg of fat efficiently and safely to achieve the ideal weight.  
 If weight is an issue this Lifestyle Enhancer will let you lose the excess weight and keep it off. We will combine sustainable training with nutritional adjustments to achieve the ideal weight. ABS has helped many people burn fat without the torture of starving.
 Warning: If you don’t want to look like an underwear model do not go any further.`,
@@ -65,6 +69,10 @@ Warning: If you don’t want to look like an underwear model do not go any furth
           subTitleDt: `Krijg aanzienlijke spiermassa en word ripped! Vergroot niet alleen de spiermassa, maar zie er ook uit
           als een gebeitelde god(in). Alleen voor degenen die eruit willen zien als een superheld die de planeet
           redt. Of een superschurk die angst inboezemt in je vijanden.`,
+          rightLink: {
+            label: 'Muscle & Strength',
+            url: 'https://advancedbodysystem.mypthub.net/buy-packages/143884/buy'
+          },
           content: [
             {
               label: 'Approach',
@@ -142,6 +150,10 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
           is een belangrijk onderdeel van alle Life Enhancers. In dit specifieke programma worden echter
           kernstabiliteit, veelzijdigheid en kracht benadrukt. Als zitten het nieuwe roken is, hoeveel uur zit u dan
           per dag? Om nog maar te zwijgen van de slechte zithouding vanaf ongeveer 10 uur &#39;s ochtends.`,
+          rightLink: {
+            label: 'Core Training Free',
+            url: 'https://advancedbodysystem.mypthub.net/buy-packages/143885/buy'
+          },
           content: [
             {
               label: 'Approach',
@@ -227,6 +239,10 @@ If sitting is the new smoking, how many hours are you sitting a day. Not mention
           cardiovasculaire training of ongeïnspireerde straight-set krachttrainingstrainingen. Bij ABS geven we
           een nieuwe draai aan intervaltraining om ervoor te zorgen dat je meer wilt zonder de blessures,
           omdat we de focus op JOU leggen. Laten we grenzen doorbreken, niet je rug.`,
+          rightLink: {
+            label: 'Life Booster Free',
+            url: 'https://advancedbodysystem.mypthub.net/buy-packages/143886/buy'
+          },
           content: [
             {
               label: 'Approach', descriptionDt: `Door middel van een basislijnbepaling op basis van meerdere factoren, zullen we beoordelen welke
@@ -418,7 +434,10 @@ Trimester 3: As you body is preparing for child birth and labour you will notice
               <span className={'r-lbl'}>{item[`label${language}`]}</span>
               <div className={'r-sub-title'}>{item[`subTitle${language}`]}</div>
             </div>
-            {this.getTriplet(item.content)}
+            <div className='triplet-container'>
+              {this.getTriplet(item.content)}
+              {item.rightLink && <a className='right-link-btn' href={item.rightLink.url} target='__blank'>{item.rightLink.label}</a>}
+            </div>
           </div>
           <hr className={'separator'}/>
         </div>
@@ -481,6 +500,8 @@ const RenderWrapper = styled.div`
       border-radius: 5px;
       box-shadow: 2px 2px 17px 3px #888888;
       background-color: #fff;
+      display: flex;
+      flex-direction: column;
       
       .feature-label {
         text-align: right;
@@ -509,10 +530,38 @@ const RenderWrapper = styled.div`
           width: 60%;
         }
       }
+
+      .triplet-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        .right-link-btn {
+          border: 1px solid #b9b9b9;
+          box-shadow: 0px 1px 1px grey;
+          text-decoration: none;
+          display: block;
+          padding: 10px;
+          background-color: #e6e6e6;
+          color: black;
+          border-radius: 6px;
+          min-width: 150px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover, &:focus {
+            background-color: #b9b9b9;
+            box-shadow: 0px 6px 16px #989898;
+          }
+        }
+
+      }
       
       .triplet {
         position: relative;
         height: 100%;
+        flex: 1;
         
         .triplet-item {
           padding: 32px;
@@ -559,6 +608,10 @@ const RenderWrapper = styled.div`
           }
           .snd-content {}
         }
+
+        .right-link-btn {
+          border: 1px solid grey;
+        }
       }
     }
   }
@@ -574,6 +627,16 @@ const RenderWrapper = styled.div`
           .r-sub-title {
             width: 90%;
           }
+      }
+
+      .triplet-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .right-link-btn {
+          width: 100%;
+          box-sizing: border-box;
+        }
       }
     }
   }
@@ -614,6 +677,16 @@ const RenderWrapper = styled.div`
           .r-sub-title {
             width: 100%;
             margin: 20px 0;
+          }
+        }
+
+        .triplet-container {
+          flex-direction: column;
+
+          .right-link-btn {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
           }
         }
         
