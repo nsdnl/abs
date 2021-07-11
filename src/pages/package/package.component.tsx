@@ -56,6 +56,10 @@ export default class PackageComponent extends Component<any, any> {
                     titleDt: 'Advanced abonnement/ 24-7',
                     price: '$ 65',
                     id: 3,
+                    // link: {
+                    //   label: 'Advanced subscription',
+                    //   url: 'https://advancedbodysystem.mypthub.net/buy-packages'
+                    // },
                     content: [
                         {label: 'Personalised nutrition', labelDt: 'train wanneer het jou schikt'},
                         {label: 'Progress monitoring', labelDt: '12 weken complete programma’s'},
@@ -147,6 +151,7 @@ Wij begrijpen dat diëten tijdelijk zijn en niet duurzaam is op de lange termijn
                             return <li key={`pkd_li-${j}`}>{cn[`label${language}`]}</li>
                         })}
                     </ul>
+                    {pkg.link && <a className='right-link-btn full-width' href={pkg.link.url} target='__blank'>{pkg.link.label}</a>}
                     <div className={`package-footer ${pkg.expand ? 'expand' : ''}`}
                          onClick={() => this.expandPackage(pkg, i)}>
                         {/*{(!pkg.expand || !pkg.selected) &&*/}
@@ -252,6 +257,7 @@ const PackageWrapper = styled.div`
         background-image: url('../../images/package_banner.jpg');
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
       }
       .img:hover {
         background-image: url('../../images/package_banner_hover.jpg');

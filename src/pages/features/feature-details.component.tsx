@@ -535,27 +535,6 @@ const RenderWrapper = styled.div`
         flex: 1;
         display: flex;
         align-items: center;
-
-        .right-link-btn {
-          border: 1px solid #b9b9b9;
-          box-shadow: 0px 1px 1px grey;
-          text-decoration: none;
-          display: block;
-          padding: 10px;
-          background-color: #e6e6e6;
-          color: black;
-          border-radius: 6px;
-          min-width: 150px;
-          text-align: center;
-          cursor: pointer;
-          transition: all 0.3s ease-in-out;
-
-          &:hover, &:focus {
-            background-color: #b9b9b9;
-            box-shadow: 0px 6px 16px #989898;
-          }
-        }
-
       }
       
       .triplet {
