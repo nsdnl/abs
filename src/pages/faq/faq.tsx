@@ -63,6 +63,20 @@ export class FaqComponent extends Component<any, any> {
             items: [
                 {
                     id: '1',
+                    label: 'What if I don’t have a credit card how can I still take advantage of ABS services?',
+                    labelDt: `Wat als ik geen creditcard heb, hoe kan ik dan toch profiteren van ABS-diensten?`,
+                    faq: `No credit card no problem. We at ABS will send you via mail an option to make that life-
+                    changing purchase. We offer multiple payment methods. Once the payment is made you will
+                    have access to the service or digital product. This might take a few hours more than when
+                    paying by credit card. Contact us so we can make it happen!`,
+                    faqDt: `Geen creditcard geen probleem. Wij van ABS sturen je per mail een optie om die
+                    levensveranderende aankoop te doen. Wij bieden meerdere betaalmethoden aan. Zodra de
+                    betaling is gedaan, heeft u toegang tot de dienst of het digitale product. Dit kan enkele uren
+                    langer duren dan bij betaling met creditcard. Neem contact met ons op zodat we je op weg
+                    kunnen helpen!`
+                },
+                {
+                    id: '2',
                     label: 'How do you assess new clients?',
                     labelDt: `Hoe beoordeelt u nieuwe klanten?`,
                     faq: `An initial fitness test must be performed to gauge your overall health and
@@ -80,7 +94,7 @@ oefenprogramma te ontwerpen, zullen we uw resultaten als uitgangspunt
 gebruiken.`
                 },
                 {
-                    id: '2',
+                    id: '3',
                     label: 'How will you track my progress?',
                     labelDt: `Hoe ga je mijn voortgang volgen?`,
                     faq: `We log your progress through an app that is convenient for you and your
@@ -92,7 +106,7 @@ hebben. Als je geen gebruik wilt maken van de app, houdt je trainer je
 voortgang handmatig bij wanneer jullie samen trainen.`
                 },
                 {
-                    id: '3',
+                    id: '4',
                     label: 'Do you offer nutritional advice?',
                     labelDt: `Biedt u voedingsadviezen aan?`,
                     faq: `We will take a closer look at your diet and make suggestions on how to add or
@@ -104,7 +118,7 @@ levensstijl en fitnessdoelen in acht genomen zodat er specifieke
 voedingsadvies kan worden geboden.`
                 },
                 {
-                    id: '4',
+                    id: '5',
                     label: `How much does it cost?`,
                     labelDt: `Hoeveel kost het?`,
                     faq: `Can you put a price on improved quality of life and breaking barriers?
@@ -119,7 +133,7 @@ verschillende inkomens.
 Neem contact met ons op en we lichten het nader toe.`
                 },
                 {
-                    id: '5',
+                    id: '6',
                     label: 'What\'s your preferred style of encouragement?',
                     labelDt: `Wat is uw favoriete stijl van aanmoediging?`,
                     faq: `We use honest and positive reinforcement. We do not believe body-
@@ -128,7 +142,7 @@ shaming can be effective for motivational purposes.`,
 shaming effectief kan zijn voor motiverende doeleinden.`
                 },
                 {
-                    id: '6',
+                    id: '7',
                     label: `How do you incorporate 'fun' into workouts?`,
                     labelDt: `Hoe integreer je 'plezier' in trainingen?`,
                     faq: `Every one different so is our view of fun. Some like to be pushed to their limit

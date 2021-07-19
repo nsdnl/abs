@@ -446,6 +446,6 @@
         display: none;
     }
     .float-bottom > .img {
-        background-image: url('../../images/about_us_philosophy_mission_mobile.png');
+        /* background-image: url('../../images/about_us_philosophy_mission_mobile.png'); */
     }
 }

@@ -16,56 +16,58 @@ export default class PackageComponent extends Component<any, any> {
             introDt: `Samen met jou kijken naar een duurzaam en genietbaar niveau van activiteit om te zorgen dat jij je geweldig voelt zodat jij.`,
             packages: [
                 {
-                    title: 'Advanced Body',
-                    titleDt: 'Advanced Body',
+                    title: 'PRIVATE HEALTH COACHING',
+                    titleDt: 'PRIVÉ GEZONDHEIDSCOACHING',
                     id: 1,
-                    price: '$ 65',
+                    price: '$ 306',
                     content: [
                         {label: '1 on 1 training', labelDt: '1 op 1 training'},
-                        {label: 'Access to  ABS app', labelDt: '1 tot 4 sessies per week'},
-                        {label: 'Customised training approach', labelDt: 'Opmaat gemaakte trainings aanpak'},
-                        {label: 'Personalised nutrition', labelDt: 'Gepersonaliseede voeding'},
-                        {label: 'progress monitoring', labelDt: 'Vooruitgang toezicht '},
-                        {label: 'Personalised nutrition plan', labelDt: 'Vooruitgang toezicht '},
-                        {label: 'At the end progress review', labelDt: 'Vooruitgang toezicht '},
+                        {label: 'Access to ABS app', labelDt: 'Toegang tot de ABS-app'},
+                        {label: 'Customised training approach', labelDt: 'Trainingsaanpak op maat'},
+                        {label: 'Personalised nutrition', labelDt: 'Gepersonaliseerde voeding'},
+                        {label: 'Progress monitoring', labelDt: 'Voortgangsbewaking'},
+                        {label: 'At the end progress review', labelDt: 'Aan het eind voortgangsoverzicht'},
+                        {label: 'Leave nothing to chance', labelDt: 'Laat niets aan het toeval over'},
                     ],
                     moreText: 'I want more',
                     detail: 'Lorum ipsum Lorum ipsumLorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum'
                 },
                 {
-                    title: 'Advanced Duo/clique',
-                    titleDt: 'Advanced Duo/clique',
-                    price: '$ 65',
+                    title: 'ABS CREDIT PACKAGES',
+                    titleDt: 'ABS KREDIETPAKKETTEN',
+                    price: '$ 100',
                     id: 2,
                     selected: true,
                     content: [
                         {
-                            label: 'Train together with your friend',
-                            labelDt: 'Samen trainen met een gelijk gestemde vriend'
+                            label: 'Calorie specific nutrition',
+                            labelDt: 'Caloriespecifieke voeding'
                         },
-                        {label: 'Access to  ABS app', labelDt: '2 sessies per week'},
-                        {label: 'Fun training program', labelDt: 'Trainingsaanpak vol '},
-                        {label: 'Personalised nutrition', labelDt: 'Gepersonaliseede voeding'},
-                        {label: 'progress monitoring', labelDt: 'Vooruitgang toezicht '},
+                        {label: 'Progress monitoring', labelDt: 'Voortgangsbewaking'},
+                        {label: 'Train in your own time', labelDt: 'Train in je eigen tijd'},
+                        {label: 'Complete programs', labelDt: "Volledige programma's"},
+                        {label: 'Book with Personal Trainer', labelDt: 'Boek met Personal Trainer'},
+                        {label: 'Purchase flexibility', labelDt: 'Aankoopflexibiliteit'}
                     ],
                     moreText: 'I want more',
                     detail: 'Lorum ipsum Lorum ipsumLorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum'
                 },
                 {
-                    title: 'Advanced subscription',
-                    titleDt: 'Advanced abonnement/ 24-7',
-                    price: '$ 65',
+                    title: 'ADVANCED DUO',
+                    titleDt: 'GEAVANCEERD DUO',
+                    price: '$ 150',
                     id: 3,
                     // link: {
                     //   label: 'Advanced subscription',
                     //   url: 'https://advancedbodysystem.mypthub.net/buy-packages'
                     // },
                     content: [
-                        {label: 'Personalised nutrition', labelDt: 'train wanneer het jou schikt'},
-                        {label: 'Progress monitoring', labelDt: '12 weken complete programma’s'},
-                        {label: 'Train in your own time', labelDt: 'online advies van onze personal trainers'},
-                        {label: '12 weeks complete program'},
-                        {label: '2 sessions with Personal Trainer*'}
+                        {label: 'Train together with your friend', labelDt: 'Train samen met je vriend'},
+                        {label: 'Access to ABS app', labelDt: 'Toegang tot de ABS-app'},
+                        {label: 'Fun training program', labelDt: 'Leuk trainingsprogramma'},
+                        {label: 'Nutrition plan', labelDt: 'Voedingsplan'},
+                        {label: 'progress monitoring', labelDt: 'Voortgangsbewaking'},
+                        {label: 'Challenge oriented', labelDt: 'Uitdagingsgericht'}
                     ],
                     moreText: 'I want more',
                     detail: 'Lorum ipsum Lorum ipsumLorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum'
@@ -101,13 +103,23 @@ Wij begrijpen dat diëten tijdelijk zijn en niet duurzaam is op de lange termijn
                     ,
                     link: 'read more', href: '#/about-us'},
                 {
-                    label: 'Challenge',
-                    labelDt: 'Challenge/uitdaging',
-                    description: `Weekly challenges for you and a friend to compete head to head.
-              Whether you’re looking for an indoor training or outdoor we design the right training to achieve your
-              goals.
-              If you are looking for fun with a friends this is for you!`,
-                    descriptionDt: `Je neemt het op tegen een vriend in deze wekelijkse uitdagingen. Als je opzoek bent voor een binnen of openlucht training, wij ontwerpen de gepaste training om dichterbij je doelen te komen. Ben je opzoek naar en leuke uitdagende training samen met een vriend dan is dit voor jou. `
+                    label: 'Credit',
+                    labelDt: 'Credit',
+                    description: `Buy credits to get exclusive access to delicious nutrition plans. If you want engaging training
+                    schemes at you leisure the credits will give you access as well. Do you need of a full
+                    monthly, 8 weeks or 12 weeks programs? Having credits will have you starting when it suites
+                    you. Maybe you are just want daily or weekly fitness and health activities, with credits in
+                    your ABS account you are just a click away. Booking individual private training sessions
+                    with your favourite training in our calendar is a breeze without having to commit to 4 or more
+                    sessions a month. This is great if you want to catch up to see if you are still on track.`,
+                    descriptionDt: `Koop tegoeden om exclusieve toegang te krijgen tot heerlijke voedingsplannen. Als u op uw
+                    gemak boeiende trainingsschema&#39;s wilt, krijg jij met deze tegoeden ook toegang. Heb je een
+                    volledig maandelijks, 8 weken of 12 weken programma nodig? Met tegoeden kun je beginnen
+                    wanneer het jou uitkomt. Misschien wil je gewoon dagelijkse of wekelijkse fitness- en
+                    gezondheidsactiviteiten, met tegoeden op uw ABS-account ben je slechts een klik verwijderd.
+                    Het boeken van individuele privétrainingen met jouw favoriete trainer in onze kalender is een
+                    fluitje van een cent. Hierdoor hoef je niet aan 4 of meer sessies per maand te binden. Dit is
+                    geweldig als wilt afspreken met jouw trainer om te zien of je nog op de goede weg bent.`
                     ,
                     link: 'read more', href: '#/about-us'},
                 {
@@ -254,7 +266,7 @@ const PackageWrapper = styled.div`
       .img {
         width: 100%;
         height: 100%;
-        background-image: url('../../images/package_banner.jpg');
+        background-image: url('../../images/package_banner.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         transition: all 0.5s ease-in-out;

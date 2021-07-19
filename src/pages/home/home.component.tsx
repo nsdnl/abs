@@ -13,14 +13,14 @@ export class HomeComponent extends PureComponent<any, any> {
                     title: 'With Khivo',
                     titleDt: 'Met Khivo',
                     label: 'Advanced Body System has an experience of more than 15 years in the fitness industry.',
-                    labelDt: 'Advanced Body System heeft meer dan 15 jaar ervaring in de fitness industrie.',
+                    labelDt: 'ADVANCED BODY SYSTEM HEEFT MEER DAN 15 JAAR ERVARING IN DE FITNESS INDUSTRIE.',
                     active: true
                 },
                 {
                     title: 'With Khivo',
                     titleDt: 'Met Khivo',
-                    label: 'The aim of Advanced body system is to provide comprehensive approach for fitness for longevity and sustainability.',
-                    labelDt: 'Het doel van Advanced Body System is om door middel van een uitgebreide aanpak in fitness te zorgen voor een duurzaamheid en een prettige levensduur.'
+                    label: 'THE AIM OF ADVANCED BODY SYSTEM IS TO PROVIDE a COMPREHENSIVE APPROACH to FITNESS FOR LONGEVITY AND SUSTAINABILITY.',
+                    labelDt: 'HET DOEL VAN ABS IS OM DOOR MIDDEL VAN EEN UITGEBREIDE AANPAK TE ZORGEN VOOR gedegenheid EN duurzaamheid in jouw leven.'
                 },
                 // {
                 //     title: 'With Khivo',
