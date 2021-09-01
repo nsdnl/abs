@@ -15,28 +15,32 @@ export class ContactUsComponent extends Component<any, any> {
         super(props);
         const language = localStorage.getItem('__ln') || '';
         this.state = {
-            mainTitle: 'DIVINATION',
-            mainTitleDt: 'WAARZEGGERIJ',
+            mainTitle: 'ARE YOU STUCK OR JUST WANT TO SAY HI?',
+            mainTitleDt: 'KOM JE ER NIET UIT OF JE WILT GEWOON HALLO ZEGGEN?',
             dutchPhone: 'Phone',
             dutchPhoneDt: 'Tel',
             language,
             trialBtnText: 'FREE 1 trial PT sessions',
             trialBtnTextDt: 'Gratis 1 proef sessie',
-            hiddenTxt: `Upon completion of any Life Enhancer, the participant will not be billed for the
-trial session which took place at the beginning. If the participant did not complete the Life Enhancer
-program, the trial pt session is €45,- ex VAT.`,
-            hiddenTxtDt: `Na voltooiing van een Life Enhancer, wordt de deelnemer niet gefactureerd voor de
-proefsessie die aan het begin plaatsvond. Als de deelnemer de Life Enhancer niet heeft voltooid
-programma, de proef pt sessie is € 45, - ex btw.
+            hiddenTxt: `Upon completion of any Private Health Coaching Package, the
+participant will not be billed for the trial session which took place at
+the start. If the participant didn’t complete the PRIVATE HEALTH
+COACHING PACKAGE, the trial session is €45,- ex VAT. Signup now
+and take advantage of the introduction to what Advanced Body
+System has to offer you.`,
+            hiddenTxtDt: `Na voltooiing van een Private Health Coaching Pakket, wordt de
+deelnemer niet gefactureerd voor de proefsessie die aan het begin
+heeft plaatsgevonden. Als de deelnemer de Private Health Coaching
+Pakket niet heeft voltooid, kost de proefsessie is € 45, - ex btw.
+Meld u nu aan en profiteer van de introductie tot wat Advanced
+Body System u te bieden heeft.
 `,
             title: `DROP US A LINE`,
             titleDt: `LAAT EEN BERICHT ACHTER`,
             subTitleDutch: `Heb je een brandende vraag na het lezen van het gehele site?
 Laat dan je contact gegevens achter en wij sturen jou z.s.m een antwoord`,
-            subTitle: `Want to be eligible for 1 free personal training trial session? <br /> Signup now and take advantage of the introduction to what Advanced Body System
-has to offer you.`,
-            subTitleDt: `Wil je in aanmerking komen voor 1 gratis proefsessie personal training? <br /> Schrijf u nu in en profiteer van de introductie tot welk Advanced Body System
-u te bieden heeft.`,
+            subTitle: ` Signup now and take advantage of the introduction to what Advanced Body System has to offer you.`,
+            subTitleDt: `Schrijf u nu in en profiteer van de introductie tot welk Advanced Body System u te bieden heeft.`,
             fields: [
                 {
                     label: 'If you have any questions don’t hesitate to ask',
@@ -203,7 +207,7 @@ const Wrapper = styled.div`
   .header {
     text-transform: uppercase;
     font-size: 2.5rem;
-    letter-spacing: 16px;
+    //letter-spacing: 16px;
   }
 
   .content {
