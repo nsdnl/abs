@@ -10,10 +10,10 @@ export default class PackageComponent extends Component<any, any> {
             title: 'More than just fitness',
             titleDt: 'MEER DAN ALLEEN FITNESS',
             subTitle: 'Assisting you to fit the success',
-            subTitleDt: 'Helpt u om het succes te passen',
+            subTitleDt: 'Helpt u om bij het succes te passen',
             intro: `At Advanced Body System we look together with you for a achievable and enjoyable
             level of activity to make you feel great and keep you going.`,
-            introDt: `Samen met jou kijken naar een duurzaam en genietbaar niveau van activiteit om te zorgen dat jij je geweldig voelt zodat jij.`,
+            introDt: `Bij Advanced Body System zoeken wij samen naar een haalbaar en plezierig niveau van activiteit om te zorgen dat jij je geweldig voelt zodat jij kan door pakken.`,
             packages: [
                 {
                     title: 'PRIVATE HEALTH COACHING',
@@ -74,7 +74,7 @@ export default class PackageComponent extends Component<any, any> {
                 }
             ],
             price: 'starting at € 59/MO',
-            priceDt: 'Vanaf 59/maand',
+            priceDt: 'Vanaf € 59/maand',
             priceTxt: `Your fitness journey begins by choosing one of packages. When
             you have made a choice we will assess your fitness level. Don’t
             worry this is a test you can’t fail. This test we will repeat periodically
@@ -83,7 +83,7 @@ export default class PackageComponent extends Component<any, any> {
             approach towards exercise. In addition to packages of at least 8
             weeks, we also offer individual nutrition plans, short training
             programs and workouts that fit within your budget. Sign up now and take advantage.`,
-            priceTxtDt: `Wanneer je een keuze hebt gemaakt beoordelen wij jouw fitness niveau. Maak je geen zorgen je kunt niet falen voor deze test. Deze aan jou aangepaste test wordt maandelijks herhaald om vooruitgang bij te houden. Elke pakket is opmaat gemaakt met als doel het veranderen van jouw  gedrag en benadering naar oefeningen.`,
+            priceTxtDt: `Wanneer je een keuze hebt gemaakt beoordelen wij jouw fitness gesteldheid. Maak je geen zorgen je kunt niet falen voor deze test. Deze test wordt periodiekelijk herhaald om vooruitgang bij te houden. Elke pakket is opmaat gemaakt met als doel het veranderen van jouw gedrag en jouw benadering naar oefeningen. Naast pakketten van minimaal 8 weken bieden wij ook losse voedingsschema’s, korte trainingsprogramma’s en work-outs die passen binnen jouw budget. Meld je nu aan en profiteer.`,
             memberTxt: `Do you want to fit in that pair of jeans, get rid of flabby arms, get lean muscles or you
             are happy as you are but want a lifestyle that is healthier, ABS is the best choice for
             you. We all want to live our best lives and feel great doing it but with your hectic
@@ -97,9 +97,7 @@ export default class PackageComponent extends Component<any, any> {
                     suitable for whatever your goals or fitness level. We pride ourselves
                     in keeping you motivated with our training methods combined with a
                     healthy dose of accountability. Our arsenal of knowledge will give
-                    you fresh ideas and inspiration for years to come.`, descriptionDt: `Investeer in je gezondheid met een personal trainer van ABS die jou individueel professioneel advies biedt.
-The specifieke methodes zijn veilig en geschikt voor alle fitness niveaus en doelen. Wij zijn trots op het feit dat we jou gemotiveerd houden met onze trainingsmethode gepaard met een gezonde doses verantwoording. Ons arsenaal aan kennis geven jou nieuwe ideeën en inspiratie voor de komen jaren.
-`,
+                    you fresh ideas and inspiration for years to come.`, descriptionDt: `Investeer in je gezondheid met een personal trainer van ABS die jou individueel en professioneel advies biedt. The specifieke methodes zijn veilig en geschikt voor alle fitness niveaus en fitness doelen. Wij zijn trots op het feit dat we jou gemotiveerd houden met onze trainingsmethodes gepaard met een gezonde doses verantwoording. Ons arsenaal aan kennis geven jou nieuwe ideeën en inspiratie voor de komen jaren.`,
                     link: 'read more', href: '#/about-us'
                 },
                 {
@@ -109,25 +107,17 @@ The specifieke methodes zijn veilig en geschikt voor alle fitness niveaus en doe
                     systematically change your lifestyle and in turn come closer to a
                     healthier you. We understand that diets are temporary and not
                     sustainable on the long-term. We strive towards working closely with you to find an eating pattern which works for you and your busy
-                    life.`, descriptionDt: `Het maken van een voedingsschema is niet moeilijk echter het persoonlijk maken voor jou en je leven daarentegen wel. Om je fitness doelen te halen moeten we achterhalen waarom jij eet zoals je nu eet. Deze aanpak zal systematisch je levensstijl veranderen met als gevolg een gezondere versie van jezelf.
-Wij begrijpen dat diëten tijdelijk zijn en niet duurzaam is op de lange termijn. Samen met jou streven we er naar om een eetpatroon te vinden dat werk aan aansluit op je drukke leven.`
+                    life.`, descriptionDt: `Het maken van een voedingsschema is niet moeilijk echter het persoonlijk maken voor jou en je leven daarentegen wel. Om je fitness doelen te halen moeten wij achterhalen waarom jij eet zoals je nu eet. Deze aanpak zal systematisch je levensstijl veranderen met als gevolg een gezondere versie van jezelf. Wij begrijpen dat diëten tijdelijk zijn en niet duurzaam is op de lange termijn. Samen met jou streven wij er naar om een eetpatroon te vinden dat werkt en aansluit op je drukke leven.`
                     ,
                     link: 'read more', href: '#/about-us'},
                 {
                     label: 'CHALLENGE',
-                    labelDt: 'Credit',
+                    labelDt: 'CHALLENGE/UITDAGING',
                     description: `Weekly challenges for you and a friend to compete head to head.
                     Whether you’re looking for an indoor or outdoor training, we design
                     the right training to achieve your goals. If you are looking for fun
                     with a friends this is for you!`,
-                    descriptionDt: `Koop tegoeden om exclusieve toegang te krijgen tot heerlijke voedingsplannen. Als u op uw
-                    gemak boeiende trainingsschema&#39;s wilt, krijg jij met deze tegoeden ook toegang. Heb je een
-                    volledig maandelijks, 8 weken of 12 weken programma nodig? Met tegoeden kun je beginnen
-                    wanneer het jou uitkomt. Misschien wil je gewoon dagelijkse of wekelijkse fitness- en
-                    gezondheidsactiviteiten, met tegoeden op uw ABS-account ben je slechts een klik verwijderd.
-                    Het boeken van individuele privétrainingen met jouw favoriete trainer in onze kalender is een
-                    fluitje van een cent. Hierdoor hoef je niet aan 4 of meer sessies per maand te binden. Dit is
-                    geweldig als wilt afspreken met jouw trainer om te zien of je nog op de goede weg bent.`
+                    descriptionDt: `Je neemt het op tegen een vriend in deze wekelijkse uitdagingen. Als je opzoek bent voor een binnen of openlucht training, wij ontwerpen de gepaste training om dichterbij je doelen te komen. Ben je opzoek naar een leuke en uitdagende training samen met een vriend dan is dit voor jou.`
                     ,
                     link: 'read more', href: '#/about-us'},
                 {
@@ -139,7 +129,7 @@ Wij begrijpen dat diëten tijdelijk zijn en niet duurzaam is op de lange termijn
                     weekly tailored training program and eating plan. You won’t ever
                     have to guess what you have to do next. Just log and see what we
                     have designed for you to achieve your goals.`,
-                    descriptionDt: `Gebruik de ABS app om wanneer het jou schikt of in om combinatie met een van de Life Enhancers. Met jou ingevoerde trainings- en voedingsresultaten gaan we voor maximale verantwoording. Log in om je wekelijkse opmaat gemaakte trainingsprogramma en eetschema te zien.  Je hoeft nooit meer te gissen naar wat je moet doen. Gewoon inloggen en kijken wat wij voor jou klaar hebben staan om je onbereikbare te bereiken.`
+                    descriptionDt: `Gebruik de ABS app wanneer het jou schikt of in combinatie met een van de Life Enhancers. Met jou ingevoerde trainings- en voedingsresultaten gaan we voor maximale verantwoording. Log in om je wekelijkse opmaat gemaakte trainingsprogramma en eetschema te zien. Je hoeft nooit meer te gissen naar wat je moet doen. Gewoon inloggen en kijken wat wij voor jou ontworpen om je onhaalbare te bereiken.`
                     ,
                     link: 'read more', href: '#/about-us'}
             ]

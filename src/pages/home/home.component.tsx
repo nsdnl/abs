@@ -7,7 +7,7 @@ export class HomeComponent extends PureComponent<any, any> {
         this.state = {
             language: language,
             tagLine: '"The experts who help you achieve your unattainable."',
-            tagLineDt: '"Dé expert die jou het onbereikbare helpt bereiken."',
+            tagLineDt: '"Dé expert die jouw het onhaalbare laat bereiken."',
             slides: [
                 {
                     title: 'With Khivo',
