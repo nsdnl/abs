@@ -14,7 +14,9 @@ export class FeaturesComponent extends Component<any, any> {
         {
           label: 'Weight/Fat management',
           labelDt: 'Weight/Fat management',
-          imgText: 'If weight is an issue this Lifestyle Enhancer will let you lose the excess weight and keep it off. We will combine sustainable training with nutritional adjustments to achieve the ideal weight.',
+          imgText: `If weight is an issue this Lifestyle Enhancer will let you lose the excess weight and keep it
+          off! We will combine feasible training with nutritional adjustments to achieve your ideal
+          weight.`,
           imgTextDt: `Als gewicht een probleem is dan zorgt deze Lifestyle Enhancer ervoor dat je het overtollige gewicht verliest en het eraf houdt. We combineren duurzame trainingen met voedingsaanpassingen om het ideale gewicht te bereiken.`,
           img: 'images/le_wm_mgmt.png',
           url: 'weight-fat-management',
@@ -25,7 +27,9 @@ export class FeaturesComponent extends Component<any, any> {
           label: 'Muscle building & strength training',
           labelDt: 'Muscle building & strength training',
           img: 'images/muscle_building_02.jpg',
-          imgText: 'Gain significant muscle mass and get sculpted! Increase not only muscle mass but also look like a chiseled god. Only for those who want to look like a superhero saving the planet. Or a supervillain striking fear in your enemies.',
+          imgText: `Gain significant muscle mass and get sculpted! Increase not only muscle mass but also look like a
+          chiselled god. Only for those who want to look like a superhero saving the planet. Or a supervillain
+          striking fear in your enemies.`,
           imgTextDt: `Krijg aanzienlijke spiermassa en word ripped Vergroot niet alleen de spiermassa, maar zie er ook uit als een Adonis. Alleen voor degenen die eruit willen zien als een superheld die de planeet redt of een superschurk die angst inboezemt in je vijanden.`,
           url: 'muscle-strength',
           id: 'muscle-strength',
@@ -35,7 +39,9 @@ export class FeaturesComponent extends Component<any, any> {
           label: 'Sport – Specific training',
           labelDt: 'Sport – Specific training',
           img: 'images/sport_specif_training_01.jpg',
-          imgText: `Enhance your power and stamina for a particular sport. Great for off-season training so you won’t experience performance reduction when getting back on pitch, mat, or in the ring. We have a training customized for you.`,
+          imgText: `Enhance your power and stamina for a particular sport. Great for off-season training so you
+          won’t experience performance reduction when getting back on pitch, mat, or in the ring. We
+          have a training customized to you.`,
           imgTextDt: `Verbeter uw kracht en uithoudingsvermogen voor een bepaalde sport. Geweldig voor trainingen buiten het seizoen met als reden prestatievermindering tegen te gaan wanneer u weer op het veld, de mat of in de ring gaat. We hebben een training op maat voor jou.`,
           url: 'sport-specific-training',
           id: 'sport-specific-training',
@@ -46,7 +52,9 @@ export class FeaturesComponent extends Component<any, any> {
           labelDt: 'Core conditioning',
           img: 'images/core_training_01.jpg',
           imgTextDt: `Bescherm uw onderrug, stabiliseer uw wervelkolom en leer de juiste houdingen aan terwijl u specifieke kernoefeningen uitvoert om de negatieve effecten van een zittende levensstijl tegen te gaan.`,
-          imgText: `Protect your lower back, stabilize your spine, and learn proper posture while performing specific core exercises to combat the negative effects of a sedentary lifestyle.`,
+          imgText: `Protect your lower back, stabilize your spine, and learn proper
+          posture while performing specific core exercises to combat the
+          negative effects of a sedentary lifestyle.`,
           url: 'core-conditioning',
           id: 'core-conditioning',
           description: 'hell this is sample text'
@@ -56,7 +64,9 @@ export class FeaturesComponent extends Component<any, any> {
           labelDt: 'Senior fitness',
           img: 'images/senior_training_01.jpg',
           imgTextDt: `Stel het verouderingsproces uit en verbeter uw welzijn en kwaliteit van leven door deze trainingsprogramma's uit te voeren. Ontworpen voor doorgewinterde volwassenen met speciale nadruk op rekken, balans en functionele bewegingen. Die slappelingen noemen je alleen Boomer, want dat is het geluid van hun kaken die op de grond vallen bij het zien van ABS goedgekeurde kracht en lijf.`,
-          imgText: `Delay the aging process and improve your well-being and quality of life by performing these workout programs. Designed for seasoned adults with special emphasis on stretching, balance, and functional movements. Those slackers only call you Boomer cause that is the sound of their jaws dropping to the floor seeing your ABS approves vigour and body.`,
+          imgText: `Delay the aging process and improve your well-being and quality of life by performing these
+          specific workout programs. Designed for seasoned adults with special emphasis on
+          stretching, balance, and functional movements.`,
           url: 'senior-fitness',
           id: 'senior-fitness',
           description: 'hell this is sample text'
@@ -66,7 +76,7 @@ export class FeaturesComponent extends Component<any, any> {
           labelDt: 'Levens booster',
           img: 'images/LifeBooster01.jpg',
           imgTextDt: `Versnel het verlies van lichaamsvet door hoge intensiteit en matige intensiteit te combineren met HIIT (hoge intensiteit intervaltraining). Alleen bestemd voor diegen die met dat extra willen.`,
-          imgText: `Accelerate body fat loss by intermixing high-intensity with moderate-intensity levels with HIIT(high-intensity interval training). Not for the faint of heart.`,
+          imgText: `Accelerate body fat loss by intermixing high-intensity with moderate-intensity levels with body type specific interval training. Not for the faint of heart.`,
           url: 'metabolic-conditioning',
           id: 'metabolic-conditioning',
           description: 'hell this is sample text'
@@ -80,11 +90,7 @@ zwangerschap, hierdoor kunt u, de aanstaande moeder, een laag risico patiënt
 blijven, waardoor u een breed scala aan opties voor de bevalling heeft. Het is een
 mix van cardiovasculaire oefeningen, kracht- en flexibiliteitstraining. Zodra uw arts
 heeft verklaard dat u niet tot een risicogroep behoort, kunnen we je reis beginnen.`,
-          imgText: `Have a healthy pregnancy by staying physically active during pregnancy, this allows
-you, the mommy-to-be to remain low-risk patients, thereby allowing them o wide
-array of options for labour and delivery. It is a mix of cardiovascular exercises,
-strength and flexibility training! Once your physician declares you are not in a risk
-group we can start you journey.`,
+          imgText: `Have a healthy pregnancy by staying physically active during pregnancy, this allows you, the mommy-to-be to remain a low-risk patient, thereby allowing you a wide array of options for labour and delivery. It is a mix of cardiovascular exercises, targeted strength and flexibility training! Once your physician declares you are not in a risk group we can start your fitness journey.`,
           url: 'prenatal-workout',
           id: 'prenatal-workout',
           description: 'hell this is sample text'
@@ -101,7 +107,7 @@ group we can start you journey.`,
           de scheiding van de linker en rechter buikwand, rectus diastase genaamd, maar ook cardio- en
           weerstandstraining op maat. Dit is de sleutel om je weer in vorm te krijgen en je goed te voelen
           zonder je bekkenbodem te belasten.`,
-          imgText: `Starting six to eight weeks after delivery. You made it, you’re a mommy! Now comes the hard part. Getting back to your fitness level and then some. This workout emphasizes reducing the separation of the left and right abdominal wall called diastasis recti. After pregnancy cardio and resistance training is key to getting you back in shape and feeling great.`,
+          imgText: `You made it, you’re a mommy! Now comes the hard part. Getting back to your fitness level and then some. We can starts 6 to 8 weeks after delivery. This workout emphasizes reducing the separation of the left and right abdominal wall called diastasis recti. After pregnancy cardio and resistance training is key to getting you back in shape and feeling great.`,
           url: 'postnatal-workout',
           id: 'postnatal-workout',
           description: 'hell this is sample text'
@@ -111,7 +117,7 @@ group we can start you journey.`,
           labelDt: 'Daddy Special',
           img: 'images/le_ds.png',
           imgTextDt: `Het bereiken van papakracht is geen eenvoudig proces, maar het krijgen van een papalichaam daarin tegen wel. Door de fysieke inspanningen van het opvoeden van kinderen laat je achter met een indrukwekkende reeks pijntjes en kwalen als je er niet klaar voor bent. Dus of je nu een nieuwe vader bent of in de nabije toekomst een hoop vreugde verwacht, doe jezelf een plezier en bereid je erop voor.`,
-          imgText: `Achieving dad strength isn't an easy process but getting a dad body on the other hand is. The physical grind of child-rearing will leave you with an impressive array of aches and pains if you're not ready for it. So whether you’re a new father or if you're expecting a bundle of joy in the near future, do yourself a favor and get prepared.`,
+          imgText: `Achieving dad strength isn't an easy process but getting a dad body on the other hand is. The physical grind of child-rearing will leave you with an impressive array of aches and pains, if you are not ready for it. So whether you are a new father or if you're expecting a bundle of joy in the near future, do yourself a favour and get prepared.`,
           url: 'daddy-special',
           id: 'daddy-special',
           description: 'hell this is sample text'
