@@ -19,7 +19,8 @@ export default class PackageComponent extends Component<any, any> {
                     title: 'PRIVATE HEALTH COACHING',
                     titleDt: 'PRIVÉ GEZONDHEIDSCOACHING',
                     id: 1,
-                    price: '$ 306',
+                    price: 'starts at € 306',
+                    priceDt: 'v.a € 306',
                     content: [
                         {label: '1 on 1 training', labelDt: '1 op 1 training'},
                         {label: 'Access to ABS app', labelDt: 'Toegang tot de ABS-app'},
@@ -35,7 +36,8 @@ export default class PackageComponent extends Component<any, any> {
                 {
                     title: 'ABS CREDIT PACKAGES',
                     titleDt: 'ABS KREDIETPAKKETTEN',
-                    price: '$ 100',
+                    price: 'starts at € 100',
+                    priceDt: 'v.a € 100',
                     id: 2,
                     selected: true,
                     content: [
@@ -55,7 +57,8 @@ export default class PackageComponent extends Component<any, any> {
                 {
                     title: 'ADVANCED DUO',
                     titleDt: 'GEAVANCEERD DUO',
-                    price: '$ 150',
+                    price: 'starts at € 150',
+                    priceDt: 'v.a € 150',
                     id: 3,
                     // link: {
                     //   label: 'Advanced subscription',
@@ -160,7 +163,7 @@ export default class PackageComponent extends Component<any, any> {
             {packages.map((pkg: any, i: number) => {
                 return <div className={`pk-package ${pkg.selected ? 'selected' : ''}`} key={`pkd_${i}`}>
                     <div className={'package-title'}>{pkg[`title${language}`]}</div>
-                    <div><span>{pkg.price}</span></div>
+                    <div><span>{pkg[`price${language}`]}</span></div>
                     <ul className={'package-content'}>
                         {pkg.content.map((cn: any, j: number) => {
                             return <li key={`pkd_li-${j}`}>{cn[`label${language}`]}</li>
