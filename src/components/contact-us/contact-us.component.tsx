@@ -35,8 +35,8 @@ Pakket niet heeft voltooid, kost de proefsessie is € 45, - ex btw.
 Meld u nu aan en profiteer van de introductie tot wat Advanced
 Body System u te bieden heeft.
 `,
-            title: `DROP US A LINE`,
-            titleDt: `LAAT EEN BERICHT ACHTER`,
+            title: `Call us or drop a line!`,
+            titleDt: `Bel of mail ons!`,
             subTitleDutch: `Heb je een brandende vraag na het lezen van het gehele site?
 Laat dan je contact gegevens achter en wij sturen jou z.s.m een antwoord`,
             subTitle: ` Signup now and take advantage of the introduction to what Advanced Body System has to offer you.`,

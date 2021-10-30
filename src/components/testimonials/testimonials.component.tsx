@@ -68,6 +68,7 @@ export class TestimonialsComponent extends Component<any, any> {
   };
 
   render() {
+    return null;
     return (
       <TestiWrapper>
         <div className={'testimonials'}>

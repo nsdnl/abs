@@ -13,13 +13,7 @@ export class AboutUsComponent extends Component<any, any> {
           owner: 'WITH KHIVO',
           ownerDt: 'MET KHIVO',
             videoUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=1',
-            philospyText: `We believe that fitness is not only about losing weight and aesthetics. We regard fitness as a
-            tool through which one can add years to your life, health to your years and prevent
-            diseases. Fitness therefore, should be a life enhancer which should be incorporated as a
-            lifestyle rather than unengaging programs. Having a sedentary employment is seen by
-            many as ‘It pays the bills but it slowly kills’. At Advanced Body we prove that it doesn’t have
-            to be like that. We believe in working smarter rather than harder. So if you give us your time,
-            we give you results`,
+            philospyText: `We believe that fitness is not only about losing weight and aesthetics. We regard fitness as a tool through which one can add years to your life, health to your years and prevent diseases. Fitness therefore, should be a life enhancer which should be incorporated as a lifestyle rather than unengaging programs. Having a sedentary employment is seen by many as “It pays the bills but it slowly kills”. At Advanced Body we prove that it doesn’t have to be like that. We believe in working smarter rather than harder. So if you give us your time, we’ll give you results.`,
             philosophy: 'Our Philosophy',
             philosophyDt: 'Onze filosofie',
             philospyTextDt: `We zijn ervan overtuigt dat fitness niet alleen gaat om afvallen en het esthetische. Wij beschouwen fitness als een hulpmiddel voor het toevoegen van jaren aan jouw leven, gezondheid aan jouw jaren en het voorkomen van ziektes. Fitness is om die reden een levensverbeteraar en moet opgenomen worden in je levensstijl in plaats van generieke programma’s. Geef ons jouw tijd en wij geven jou resultaten.`,
@@ -27,19 +21,7 @@ export class AboutUsComponent extends Component<any, any> {
             philospyMainTextDt: `Bij Advanced Body System geloven wij in slimmer werken in plaats van harder. Dus als jij ons jouw tijd geeft geven wij je resultaten.`,
             ourGymLabel: 'OUR GYM',
             ourGymLabelDt: 'ONZE GYM',
-            ourGymText: `The company was founded in 2007 by me, Khivo Boyrard. I am a
-            certified Fitness Trainer A &amp; B and a certified Health Specialist
-            (EQF level 5). Working at multiple commercial and corporate fitness
-            centres I understands the importance of feeling great, looking good
-            and combating the sedentary lifestyle. Constantly am I honing my
-            skillset. With an extensive practical experience of more than a
-            decade our personal trainers, group fitness instructors and nutrition
-            consultants have had the pleasure in guiding a wide range of
-            people achieve their fitness goals. The main aim of Advanced Body
-            System is to focus on and improve the healthspan of the current
-            and later years of our lives. The goal is not only have an extended
-            lifespan through longevity but have more vitality and be the best
-            version of yourself at any age.`,
+            ourGymText: `The company was founded in 2007 by me, Khivo Boyrard. I am a certified Fitness Trainer A & B and a certified Health Specialist (EQF level 5). Working at multiple commercial and corporate fitness centres I understands the importance of feeling great, looking good and combating the sedentary lifestyle. Constantly I am honing my skillset. With an extensive practical experience of more than a decade our personal trainers, group fitness instructors and nutrition consultants have had the pleasure in guiding a wide range of people achieve their fitness goals. The main aim of Advanced Body System is to focus on and improve the healthspan of the current and later years of our lives. The goal is not only have an extended lifespan through longevity but have more vitality and be the best version of yourself at any age.`,
             ourGymTextDt: `Advanced Body System werd opgericht in 2007 door Khivo Boyrard. Ik ben een gecertificeerd Fitness trainer A & B en Health Specialist (EQF level 5). Gewerkt te hebben bij meerdere commerciële en zakelijke fitness centra begrijp ik als geen ander het belang van je goed voelen, er goed uitzien en het tegengaan van een sedentaire levensstijl. Constant verbeter ik mijn vaardigheden aan het verbeteren. Met een uitgebreide praktijkervaring van meer dan 10 jaar hebben onze personal trainers, groepsles instructeurs en voedingsadviseurs het plezier om een breed scala aan mensen bij te staan om hun fitness doelen te bereiken. Het hoofddoel van Advanced Body System is het richten op en bevorderen van het gezondheid van de huidige en latere levensjaren. Het doel is niet alleen een langere levensduur maar ook meer vitaliteit om de beste versie te zijn van jezelf op elke leeftijd.`,
             gymExt: `The company was founded in 2007 by me, Khivo Boyrard.
 As a certified Fitness Trainer A & B and a certified Health Specialist (EQF level 5) my joy comes from  being an added value in your journey towards your best self. Seeing the smile on your face when you achieve your unattainable is personally gratifying. The name Advanced Body System or ABS is not  only want everyone wants but stands for a system which incorporates different training methods and lifestyle adjustments adapted to your journey.
@@ -51,19 +33,11 @@ After 1 week of taking an extended vacation of 2 months her pain disappeared. Sh
 I am constantly honing his skillset by updating my knowledge through education.
 With an extensive practical experience of more than a decade as a personal trainer, group fitness instructor and nutrition consultant have had the pleasure in guiding a wide range of people achieve their fitness goals. 
 The main aim of Advanced Body System is to focus and improve the health span of the current and later years of our lives. The goal is not only have an extended lifespan through longevity but have more vitality and be the best version of yourself at any age.`,
-            missionText: `At Advanced Body System we understand that each and every body is different and
-            comes with its own challenges. Therefore we provide an approach tailor made
-            specific to individual needs. Fitness should be an enjoyment, goal oriented but most
-            of all effective. Each participant should have fun while improving vitality through
-            proven fitness. We provide the knowledge and skillset to our clients for continued
-            effects.`,
+            missionText: `At Advanced Body System we understand that each and every body is different and comes with its own challenges. Therefore we provide an approach tailor made specific to individual needs. Fitness should be an enjoyment, goal oriented but most of all effective. Each participant should have fun while improving vitality through proven fitness. We provide the knowledge and skillset to our clients for continued effects.`,
             missionTextDt: `Bij Advanced Body System begrijpen we dat ieder lichaam anders is en komt met eigen uitdagingen. Met dit als uitgangspunt bieden wij een op maat gemaakte aanpak voor individuele behoeften. Fitness zou prettig, doel gericht maar vooral effectief moeten zijn. Iedere deelnemer moet zich vermaken tijdens het bevorderen van de vitaliteit door bewezen fitness. Wij bieden de kennis en vaardigheden aan onze cliënten voor een blijvend resultaat.`,
             missionTitle: 'OUR MISSION',
             missionTitleDt: 'ONZE MISSIE',
-            headerText: `AdvancedBodySystem envisions working with various professionals to
-            offer the best tailor-made service to achieve fitness success. The main
-            aim of AdvancedBodySystem is to focus on and improve the healthspan
-            of current and later years of your life.`,
+            headerText: `AdvancedBodySystem envisions working with various professionals to offer the best tailor-made service to achieve fitness success. The main aim of Advanced Body System is to focus on and improve the healthspan of current and later years of your life.`,
             headerTextDt: `ABS voorziet een samenwerking met verschillende professionals om de beste op maat gemaakte service te bieden voor het behalen van fitnesssucces. Het voornaamste doel van ABS is om te concentreren en het verbeteren van de gezondheid van uw huidige en latere jaren.`
         };
     }
